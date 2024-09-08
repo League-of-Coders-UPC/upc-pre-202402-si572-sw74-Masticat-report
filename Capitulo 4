@@ -1,0 +1,513 @@
+# Domain-Driven Design (DDD) Bounded Contexts
+
+## 1. Profile Bounded Context
+
+### 4.2.1. Domain Layer
+
+#### Entities
+
+- **Usuario**
+  - Atributos: Id, Nombre, Email, etc.
+  - Métodos: Crear(), Actualizar(), Eliminar(), etc.
+- **Mascota**
+  - Atributos: Id, Nombre, Microchip, etc.
+  - Métodos: Registrar(), Actualizar(), Eliminar(), etc.
+- **Preferencias**
+  - Atributos: Id, UsuarioId, Preferencia, etc.
+  - Métodos: Guardar(), Cargar(), Eliminar(), etc.
+
+#### Aggregates
+Usuario y Mascota pueden formar un agregado si la relación es fuerte.
+
+#### Domain Services
+Servicios para gestionar relaciones entre Usuario y Mascota.
+
+#### Repositories
+- IUsuarioRepository
+- IMascotaRepository
+
+### 4.2.2. Interface Layer
+
+#### Controllers
+- UsuarioController: Gestiona operaciones CRUD para usuarios.
+- MascotaController: Gestiona operaciones CRUD para mascotas.
+- PreferenciasController: Gestiona preferencias de usuario.
+
+### 4.2.3. Application Layer
+
+#### Command Handlers
+- CreateUsuarioCommandHandler
+- UpdateMascotaCommandHandler
+
+#### Event Handlers
+- UsuarioCreatedEventHandler
+- MascotaUpdatedEventHandler
+
+### 4.2.4. Infrastructure Layer
+
+#### Implementaciones de Repositories
+- UsuarioRepository: Implementación de IUsuarioRepository.
+- MascotaRepository: Implementación de IMascotaRepository.
+
+#### Servicios Externos
+Conexión a bases de datos, APIs externas para gestión de perfiles, etc.
+
+### 4.2.6. Bounded Context Software Architecture Component Level Diagrams
+
+#### Componentes
+- UsuarioService
+- MascotaService
+- PreferenciasService
+  
+
+### 4.2.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 4.2.7.1. Bounded Context Domain Layer Class Diagrams
+
+[Diagrama de Clases]
+
+#### 4.2.7.2. Bounded Context Database Design Diagram
+
+[Diagrama de Base de Datos]
+
+## 2. IAM (Identity and Access Management) Bounded Context
+
+### 4.2.1. Domain Layer
+
+#### Entities
+
+- **Credenciales**
+  - Atributos: Id, UsuarioId, ContraseñaHash, etc.
+  - Métodos: Validar(), CambiarContraseña(), etc.
+- **Roles**
+  - Atributos: Id, Nombre, Descripción, etc.
+  - Métodos: Asignar(), Eliminar(), etc.
+- **Permisos**
+  - Atributos: Id, RolId, Recurso, etc.
+  - Métodos: Asignar(), Revocar(), etc.
+
+#### Value Objects
+Información de credenciales y permisos.
+
+#### Aggregates
+Credenciales, Roles, y Permisos.
+
+#### Domain Services
+- AuthenticationService
+- AuthorizationService
+
+#### Repositories
+- ICredencialesRepository
+- IRolesRepository
+- IPermisosRepository
+
+### 4.2.2. Interface Layer
+
+#### Controllers
+- AuthController: Gestión de autenticación.
+- RoleController: Gestión de roles y permisos.
+
+### 4.2.3. Application Layer
+
+#### Command Handlers
+- LoginCommandHandler
+- AssignRoleCommandHandler
+
+#### Event Handlers
+- UserAuthenticatedEventHandler
+- RoleAssignedEventHandler
+
+### 4.2.4. Infrastructure Layer
+
+#### Implementaciones de Repositories
+- CredencialesRepository
+- RolesRepository
+- PermisosRepository
+
+#### Servicios Externos
+Conexiones a sistemas de autenticación, servicios de identidad, etc.
+
+### 4.2.6. Bounded Context Software Architecture Component Level Diagrams
+
+#### Componentes
+- AuthenticationService
+- AuthorizationService
+
+### 4.2.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 4.2.7.1. Bounded Context Domain Layer Class Diagrams
+
+[Diagrama de Clases]
+
+#### 4.2.7.2. Bounded Context Database Design Diagram
+
+[Diagrama de Base de Datos]
+
+## 3. Subscriptions and Payments Bounded Context
+
+### 4.2.1. Domain Layer
+
+#### Entities
+
+- **PlanDeSuscripcion**
+  - Atributos: Id, Nombre, Precio, etc.
+  - Métodos: Crear(), Actualizar(), etc.
+- **Pago**
+  - Atributos: Id, UsuarioId, Monto, Fecha, etc.
+  - Métodos: Procesar(), Reembolsar(), etc.
+- **Factura**
+  - Atributos: Id, PagoId, Detalles, etc.
+  - Métodos: Emitir(), Cancelar(), etc.
+
+#### Value Objects
+Información de pago, detalles de factura.
+
+#### Aggregates
+PlanDeSuscripcion, Pago, Factura.
+
+#### Domain Services
+- SubscriptionService
+- PaymentService
+
+#### Repositories
+- IPlanDeSuscripcionRepository
+- IPagoRepository
+- IFacturaRepository
+
+### 4.2.2. Interface Layer
+
+#### Controllers
+- SubscriptionController: Gestión de suscripciones.
+- PaymentController: Gestión de pagos y facturación.
+
+### 4.2.3. Application Layer
+
+#### Command Handlers
+- CreateSubscriptionCommandHandler
+- ProcessPaymentCommandHandler
+
+#### Event Handlers
+- SubscriptionCreatedEventHandler
+- PaymentProcessedEventHandler
+
+### 4.2.4. Infrastructure Layer
+
+#### Implementaciones de Repositories
+- PlanDeSuscripcionRepository
+- PagoRepository
+- FacturaRepository
+
+#### Servicios Externos
+Integración con pasarelas de pago, sistemas de facturación, etc.
+
+### 4.2.6. Bounded Context Software Architecture Component Level Diagrams
+
+#### Componentes
+- SubscriptionService
+- PaymentService
+
+### 4.2.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 4.2.7.1. Bounded Context Domain Layer Class Diagrams
+
+[Diagrama de Clases]
+
+#### 4.2.7.2. Bounded Context Database Design Diagram
+
+[Diagrama de Base de Datos]
+
+## 4. Configuration and Planning Bounded Context
+
+### 4.2.1. Domain Layer
+
+#### Entities
+
+- **ConfiguracionDeDispositivo**
+  - Atributos: Id, DispositivoId, Configuracion, etc.
+  - Métodos: Configurar(), Obtener(), etc.
+- **HorarioDeAlimentacion**
+  - Atributos: Id, MascotaId, Hora, etc.
+  - Métodos: Programar(), Actualizar(), etc.
+- **ConfiguracionDeSensores**
+  - Atributos: Id, SensorId, Configuracion, etc.
+  - Métodos: Configurar(), Leer(), etc.
+
+#### Value Objects
+Información de configuración.
+
+#### Aggregates
+ConfiguracionDeDispositivo, HorarioDeAlimentacion, ConfiguracionDeSensores.
+
+#### Domain Services
+- DeviceConfigurationService
+- FeedingScheduleService
+
+#### Repositories
+- IConfiguracionDeDispositivoRepository
+- IHorarioDeAlimentacionRepository
+- IConfiguracionDeSensoresRepository
+
+### 4.2.2. Interface Layer
+
+#### Controllers
+- DeviceConfigurationController: Gestión de configuraciones de dispositivos.
+- FeedingScheduleController: Gestión de horarios de alimentación.
+- SensorConfigurationController: Gestión de configuraciones de sensores.
+
+### 4.2.3. Application Layer
+
+#### Command Handlers
+- ConfigureDeviceCommandHandler
+- ScheduleFeedingCommandHandler
+
+#### Event Handlers
+- DeviceConfiguredEventHandler
+- FeedingScheduledEventHandler
+
+### 4.2.4. Infrastructure Layer
+
+#### Implementaciones de Repositories
+- ConfiguracionDeDispositivoRepository
+- HorarioDeAlimentacionRepository
+- ConfiguracionDeSensoresRepository
+
+#### Servicios Externos
+Integración con dispositivos, sistemas de programación, etc.
+
+### 4.2.6. Bounded Context Software Architecture Component Level Diagrams
+
+#### Componentes
+- DeviceConfigurationService
+- FeedingScheduleService
+
+### 4.2.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 4.2.7.1. Bounded Context Domain Layer Class Diagrams
+
+[Diagrama de Clases]
+
+#### 4.2.7.2. Bounded Context Database Design Diagram
+
+[Diagrama de Base de Datos]
+
+## 5. Operation Bounded Context
+
+### 4.2.1. Domain Layer
+
+#### Entities
+
+- **Dispensado**
+  - Atributos: Id, DispositivoId, Cantidad, Hora, etc.
+  - Métodos: Dispensar(), ObtenerHistorial(), etc.
+- **LecturaDeSensores**
+  - Atributos: Id, SensorId, Valor, Fecha, etc.
+  - Métodos: Leer(), Analizar(), etc.
+- **EstadoDelDispositivo**
+  - Atributos: Id, DispositivoId, Estado, etc.
+  - Métodos: ActualizarEstado(), ObtenerEstado(), etc.
+
+#### Value Objects
+Información de dispensado y estado del dispositivo.
+
+#### Aggregates
+Dispensado, LecturaDeSensores, EstadoDelDispositivo.
+
+#### Domain Services
+- DispensingService
+- SensorReadingService
+
+#### Repositories
+- IDispensadoRepository
+- ILecturaDeSensoresRepository
+- IEstadoDelDispositivoRepository
+
+### 4.2.2. Interface Layer
+
+#### Controllers
+- DispensingController: Gestión del dispensado de comida y agua.
+- SensorReadingController: Gestión de lecturas de sensores.
+- DeviceStatusController: Gestión del estado del dispositivo.
+
+### 4.2.3. Application Layer
+
+#### Command Handlers
+- DispenseFoodCommandHandler
+- ReadSensorDataCommandHandler
+
+#### Event Handlers
+- FoodDispensedEventHandler
+- SensorDataReadEventHandler
+
+### 4.2.4. Infrastructure Layer
+
+#### Implementaciones de Repositories
+- DispensadoRepository
+- LecturaDeSensoresRepository
+- EstadoDelDispositivoRepository
+
+#### Servicios Externos
+Integración con dispositivos de dispensado y sensores, etc.
+
+### 4.2.6. Bounded Context Software Architecture Component Level Diagrams
+
+#### Componentes
+- DispensingService
+- SensorReadingService
+
+### 4.2.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 4.2.7.1. Bounded Context Domain Layer Class Diagrams
+
+[Diagrama de Clases]
+
+#### 4.2.7.2. Bounded Context Database Design Diagram
+
+[Diagrama de Base de Datos]
+
+## 6. Service Execution Bounded Context
+
+### 4.2.1. Domain Layer
+
+#### Entities
+
+- **AnalisisDeHabitos**
+  - Atributos: Id, MascotaId, Datos, etc.
+  - Métodos: Analizar(), GenerarReporte(), etc.
+- **Reporte**
+  - Atributos: Id, AnalisisId, Contenido, etc.
+  - Métodos: Generar(), Enviar(), etc.
+- **ServicioPremium**
+  - Atributos: Id, UsuarioId, Caracteristica, etc.
+  - Métodos: Activar(), Desactivar(), etc.
+
+#### Value Objects
+Información de análisis, reportes y características premium.
+
+#### Aggregates
+AnalisisDeHabitos, Reporte, ServicioPremium.
+
+#### Domain Services
+- HabitAnalysisService
+- ReportGenerationService
+
+#### Repositories
+- IAnalisisDeHabitosRepository
+- IReporteRepository
+- IServicioPremiumRepository
+
+### 4.2.2. Interface Layer
+
+#### Controllers
+- HabitAnalysisController: Gestión del análisis de hábitos.
+- ReportController: Gestión de reportes.
+- PremiumServiceController: Gestión de funcionalidades premium.
+
+### 4.2.3. Application Layer
+
+#### Command Handlers
+- AnalyzeHabitsCommandHandler
+- GenerateReportCommandHandler
+
+#### Event Handlers
+- HabitsAnalyzedEventHandler
+- ReportGeneratedEventHandler
+
+### 4.2.4. Infrastructure Layer
+
+#### Implementaciones de Repositories
+- AnalisisDeHabitosRepository
+- ReporteRepository
+- ServicioPremiumRepository
+
+#### Servicios Externos
+Integración con servicios de análisis, generación de reportes, etc.
+
+### 4.2.6. Bounded Context Software Architecture Component Level Diagrams
+
+#### Componentes
+- HabitAnalysisService
+- ReportGenerationService
+
+### 4.2.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 4.2.7.1. Bounded Context Domain Layer Class Diagrams
+
+[Diagrama de Clases]
+
+#### 4.2.7.2. Bounded Context Database Design Diagram
+
+[Diagrama de Base de Datos]
+
+## 7. Monitoring Bounded Context
+
+### 4.2.1. Domain Layer
+
+#### Entities
+
+- **DatosDeUso**
+  - Atributos: Id, UsuarioId, Fecha, Datos, etc.
+  - Métodos: Recopilar(), Analizar(), etc.
+- **Notificacion**
+  - Atributos: Id, UsuarioId, Mensaje, Fecha, etc.
+  - Métodos: Enviar(), Recibir(), etc.
+- **EstadoDeSaludDeLaMascota**
+  - Atributos: Id, MascotaId, Estado, etc.
+  - Métodos: Actualizar(), Consultar(), etc.
+
+#### Value Objects
+Información de uso, notificaciones y estado de salud.
+
+#### Aggregates
+DatosDeUso, Notificacion, EstadoDeSaludDeLaMascota.
+
+#### Domain Services
+- UsageDataService
+- NotificationService
+
+#### Repositories
+- IDatosDeUsoRepository
+- INotificacionRepository
+- IEstadoDeSaludDeLaMascotaRepository
+
+### 4.2.2. Interface Layer
+
+#### Controllers
+- UsageDataController: Gestión de datos de uso.
+- NotificationController: Gestión de notificaciones.
+- HealthStatusController: Gestión del estado de salud de las mascotas.
+
+### 4.2.3. Application Layer
+
+#### Command Handlers
+- CollectUsageDataCommandHandler
+- SendNotificationCommandHandler
+
+#### Event Handlers
+- UsageDataCollectedEventHandler
+- NotificationSentEventHandler
+
+### 4.2.4. Infrastructure Layer
+
+#### Implementaciones de Repositories
+- DatosDeUsoRepository
+- NotificacionRepository
+- EstadoDeSaludDeLaMascotaRepository
+
+#### Servicios Externos
+Integración con sistemas de monitoreo, servicios de notificación, etc.
+
+### 4.2.6. Bounded Context Software Architecture Component Level Diagrams
+
+#### Componentes
+- UsageDataService
+- NotificationService
+
+### 4.2.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 4.2.7.1. Bounded Context Domain Layer Class Diagrams
+
+[Diagrama de Clases]
+
+#### 4.2.7.2. Bounded Context Database Design Diagram
+
+[Diagrama de Base de Datos]
