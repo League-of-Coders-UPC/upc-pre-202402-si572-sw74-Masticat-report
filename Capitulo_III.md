@@ -1,4 +1,7 @@
 # 3.1.  To-Be Scenario Mapping.
+<div align="center">
+  <img src="https://github.com/League-of-Coders-UPC/upc-pre-202402-si572-sw74-Masticat-report/blob/main/Resources/images/to_be_mapping.png" alt="to_be">
+</div>
 
 # 3.2. User Stories
 
@@ -24,7 +27,19 @@
 | TS01 | Autenticar con API | Como desarrollador, quiero autenticarme en la API de Masticat para acceder a los endpoints protegidos | Given que tengo credenciales de desarrollador válidas<br>When envío una solicitud de autenticación con mis credenciales<br>Then recibo un token de acceso válido | E07 |
 | TS02 | Obtener datos de alimentación | Como desarrollador, quiero obtener datos de alimentación de una mascota específica a través de la API para integrarlos en mi aplicación | Given que estoy autenticado en la API<br>When hago una solicitud GET al endpoint `/api/v1/pets/{petId}/feeding-data`<br>Then recibo un JSON con los datos de alimentación de la mascota especificada | E07 |
 
-# 3.3. 
+# 3.3. Impact Mapping
+
+<div align="center">
+  <img src="https://github.com/League-of-Coders-UPC/upc-pre-202402-si572-sw74-Masticat-report/blob/main/Resources/images/impact_mapping.png" alt="to_be">
+</div>
+
+<div align="center">
+  <img src="https://github.com/League-of-Coders-UPC/upc-pre-202402-si572-sw74-Masticat-report/blob/main/Resources/images/impact_mapping_2.png" alt="to_be">
+</div>
+
+<div align="center">
+  <img src="https://github.com/League-of-Coders-UPC/upc-pre-202402-si572-sw74-Masticat-report/blob/main/Resources/images/impact_mapping_3.png" alt="to_be">
+</div>
 
 # 3.4. Product Backlog
 
