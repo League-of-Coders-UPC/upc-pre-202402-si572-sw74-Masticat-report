@@ -1,153 +1,231 @@
-# Capítulo IV: Strategic-Level Software Design
+![image](https://github.com/user-attachments/assets/b18146e3-114d-402d-8517-27d6578bf2d8)# Capítulo IV: Strategic-Level Software Design
 
-## 4.1. Strategic-Level Attribute-Driven Design
+## 4.1. Strategic-Level Domain-Driven Design.
 
-### 4.1.1. Design Purpose
+### 4.1.1. EventStorming.
 
-Propósito del Diseño: El propósito del diseño estratégico de Masticat es crear una solución automatizada de dispensación de alimentos para mascotas que elimine la necesidad de intervención humana constante y proporciona un control preciso sobre la alimentación de las mascotas. Esta solución busca ofrecer a los dueños de mascotas y clínicas veterinarias una herramienta confiable para la gestión de la alimentación, mejorando la salud y el bienestar de las mascotas a través de una nutrición controlada y monitorizada. Además, se busca proporcionar una plataforma que permita a los usuarios gestionar perfiles, recibir notificaciones, analizar hábitos alimenticios y acceder a funcionalidades premium para una experiencia completa y personalizada.
+Leyenda:
 
-### 4.1.2. Attribute-Driven Design Inputs
+![](https://i.gyazo.com/ff0028ae1632193137d151473b94c701.png)
 
-#### 4.1.2.1. Primary Functionality (Primary User Stories)
+![](https://i.gyazo.com/46e66e4be5903b664951fe0b8a723fe5.png)
 
-| Epic / User Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
-|----------------------|--------|-------------|-------------------------|---------------------------|
-| US01 | Crear perfil de usuario | Como nuevo usuario, quiero crear mi perfil en la aplicación Masticat para comenzar a utilizar el sistema | Given que soy un nuevo usuario<br>When ingreso mis datos personales y creo una contraseña<br>Then se crea mi perfil de usuario y puedo acceder a la aplicación | E01 |
-| US02 | Añadir perfil de mascota | Como usuario registrado, quiero añadir el perfil de mi mascota para personalizar su plan de alimentación | Given que estoy autenticado en la aplicación<br>When ingreso los datos de mi mascota (nombre, especie, raza, edad, peso)<br>Then se crea un perfil para mi mascota asociado a mi cuenta | E01 |
-| US03 | Conectar dispensador | Como usuario, quiero conectar mi dispensador Masticat a la red WiFi para controlarlo a través de la aplicación | Given que tengo un dispensador Masticat<br>When sigo las instrucciones de configuración en la app<br>Then el dispensador se conecta exitosamente a mi red WiFi y aparece como dispositivo activo en mi app | E02 |
-| US04 | Programar horarios de alimentación | Como dueño de mascota, quiero programar horarios de alimentación para que mi mascota reciba sus comidas de forma regular | Given que tengo un dispensador conectado y un perfil de mascota<br>When establecer horarios de alimentación en la aplicación<br>Then el dispensador libera alimento en los horarios programados | E02 |
+![](https://i.gyazo.com/0c3122b7c269c9697835ec151d44913c.png)
 
-#### 4.1.2.2. Quality Attribute Scenarios
+![](https://i.gyazo.com/4285cb4c9823a91bb878fb58ba5dfc13.png)
 
-**Scenario 1: Reliability**
-- Atributo: Continuidad del servicio
-- Estímulo: Corte de energía eléctrica
-- Artefacto: Sistema de dispensación Masticat
-- Entorno: Condiciones normales de operación
-- Respuesta: El sistema debe continuar funcionando con la batería de respaldo
-- Medida: Tiempo de operación continua sin energía eléctrica (mínimo 24 horas)
+![](https://i.gyazo.com/7e8f86efaf6e0d06dae554fa426e3a79.png)
 
-**Scenario 2: Usability**
-- Atributo: Facilidad de configuración
-- Estímulo: Primera instalación del dispositivo
-- Artefacto: Aplicación móvil de Masticat
-- Entorno: Hogar del usuario
-- Respuesta: El usuario debe poder configurar el dispositivo y programar la primera alimentación
-- Medida: Tiempo para completar la configuración inicial (menos de 15 minutos)
+![](https://i.gyazo.com/e7fed2c8ba8537d04d7c292e9cdfec98.png)
 
-**Scenario 3: Performance**
-- Atributo: Tiempo de respuesta
-- Estímulo: Detección de mascota cerca del dispensador
-- Artefacto: Sensores y mecanismo de dispensación
-- Entorno: Operación normal
-- Respuesta: El sistema debe identificar a la mascota y dispensar el alimento
-- Medida: Tiempo desde la detección hasta la dispensación (menos de 5 segundos)
+![](https://i.gyazo.com/07244f58bf3669325c885a07a2a9d2b8.png)
 
-#### 4.1.2.3. Constraints
+#### 4.1.1.1. Candidate Context Discovery.
 
-1. El dispositivo debe ser compatible con diferentes tipos y tamaños de alimento seco para mascotas.
-2. La aplicación móvil debe funcionar en sistemas iOS y Android.
-3. El sistema debe cumplir con las regulaciones de seguridad alimentaria para mascotas.
-4. La comunicación entre el dispositivo y la aplicación debe ser segura y encriptada.
-5. El consumo de energía del dispositivo debe ser optimizado para una larga duración de la batería.
-6. La integración con sistemas de terceros debe realizarse a través de una API segura y documentada.
+**1\. Profile Context**
 
-### 4.1.3. Architectural Drivers Backlog
+**Dominio principal:** Gestión de usuarios, mascotas y dispositivos.
 
-**Driver 1: Precisión en la Dispensación**
-- Descripción: La precisión en la medición y dispensación de alimentos es crucial para mantener dietas controladas.
-- Importancia para Stakeholders: Alta
-- Impacto en Architecture Technical Complexity: Media
+**Responsabilidades:**
 
-**Driver 2: Conectividad y Control Remoto**
-- Descripción: La capacidad de controlar y monitorear el dispositivo remotamente es esencial para la comodidad del usuario.
-- Importancia para Stakeholders: Alta
-- Impacto en Architecture Technical Complexity: Alta
+- Crear y gestionar perfiles de usuario (Dueños, Veterinarios, Cuidadores).
+- Administración de mascotas (nombre, raza, microchip).
+- Asignación de dispositivos Masticat a mascotas.
+- Configuración de preferencias y personalización del sistema por usuario y mascota.
 
-**Driver 3: Identificación de Mascotas**
-- Descripción: La habilidad de identificar diferentes mascotas permite una alimentación personalizada y un seguimiento preciso.
-- Importancia para Stakeholders: Media
-- Impacto en Architecture Technical Complexity: Alta
+**Entidades principales:**
 
-**Driver 4: Análisis de Datos y Reportes**
-- Descripción: La capacidad de generar informes detallados y análisis de hábitos alimenticios es clave para el valor añadido del producto.
-- Importancia para Stakeholders: Alta
-- Impacto en Architecture Technical Complexity: Media
+- Usuario
+- Mascota
+- Dispositivo
 
-### 4.1.4. Architectural Design Decisions
+**Eventos:**
 
-1. Implementar un sistema de sensores RFID para la identificación precisa de mascotas.
-2. Utilizar una arquitectura basada en la nube para el almacenamiento de datos y el control remoto.
-3. Desarrollar una aplicación móvil híbrida utilizando React Native para asegurar la compatibilidad con iOS y Android.
-4. Implementar un sistema de medición basado en peso para garantizar la precisión en la dispensación de alimentos.
-5. Utilizar una arquitectura de microservicios para facilitar la escalabilidad y el mantenimiento del backend.
-6. Implementar un sistema de notificaciones push para mantener a los usuarios informados en tiempo real.
+- Usuario Registrado
+- Mascota Agregada
+- Dispositivo Configurado para Mascota
 
-### 4.1.5. Quality Attribute Scenario Refinements
+**Servicios:**
 
-**Scenario Refinement for Reliability**
-- Scenario(s): Continuidad del servicio durante cortes de energía
-- Business Goals: Asegurar la alimentación constante de las mascotas
-- Relevant Quality Attributes: Confiabilidad, Disponibilidad
-- Stimulus: Corte de energía eléctrica
-- Scenario Components: Activación de la batería de respaldo, mantenimiento de funciones críticas
-- Stimulus Source: Falla en el suministro eléctrico
-- Environment: Hogar o clínica veterinaria
-- Artifact (if Known): Sistema de alimentación Masticat
-- Response: Continuación de la operación normal del dispositivo
-- Response Measure: Duración de la operación con batería (mínimo 24 horas)
-- Questions: 
-  - ¿Cómo se notifica al usuario sobre el cambio a batería? 
-  - ¿Cómo se prioriza el uso de energía en modo batería?
-- Issues: Balancear la duración de la batería con la funcionalidad del dispositivo
+- Vinculación de nuevos usuarios.
+- Integración de dispositivos con mascotas.
+- Almacenamiento de perfiles y configuración personal.
 
-**Scenario Refinement for Usability**
-- Scenario(s): Facilidad de configuración inicial
-- Business Goals: Maximizar la adopción y satisfacción del usuario
-- Relevant Quality Attributes: Usabilidad, Experiencia de Usuario
-- Stimulus: Primera instalación y configuración del dispositivo
-- Scenario Components: Guía paso a paso, configuración de perfil de mascota, programación de primera alimentación
-- Stimulus Source: Nuevo usuario
-- Environment: Aplicación móvil y dispositivo Masticat
-- Artifact (if Known): Interfaz de usuario de la aplicación móvil
-- Response: Configuración completa y exitosa del dispositivo
-- Response Measure: Tiempo para completar la configuración (objetivo: menos de 15 minutos)
-- Questions: 
-  - ¿Cómo se puede simplificar aún más el proceso de configuración? 
-  - ¿Qué pasos son absolutamente necesarios?
-- Issues: Equilibrar la simplicidad con la necesidad de recopilar información esencial sobre la mascota
+### **2\. IAM (Identity and Access Management) Context**
 
-**Scenario Refinement for Performance**
-- Scenario(s): Respuesta rápida en la dispensación de alimentos
-- Business Goals: Asegurar una experiencia fluida y confiable para las mascotas y sus dueños
-- Relevant Quality Attributes: Rendimiento, Eficiencia
-- Stimulus: Mascota se acerca al dispensador durante un horario programado de alimentación
-- Scenario Components: Detección de la mascota, verificación del horario, medición y dispensación del alimento
-- Stimulus Source: Presencia de la mascota
-- Environment: Hogar del usuario, condiciones normales de operación
-- Artifact (if Known): Sensores del dispensador Masticat, mecanismo de dispensación
-- Response: Dispensación precisa y oportuna del alimento
-- Response Measure: Tiempo total desde la detección hasta la dispensación completa (objetivo: menos de 5 segundos)
-- Questions: 
-  - ¿Cómo se maneja la situación si múltiples mascotas se acercan al mismo tiempo? 
-  - ¿Cómo se asegura la precisión en la cantidad dispensada?
-- Issues: Balancear la velocidad de respuesta con la precisión en la medición del alimento
+**Dominio secundario:** Autenticación y autorización.
 
-#### 4.1.2.3. Constraints (Expanded)
+**Responsabilidades:**
 
-1. **Compatibilidad con diferentes tipos de alimento:** El dispositivo debe ser compatible con distintos tipos y tamaños de alimento seco para mascotas, asegurando que funcione de manera eficiente sin obstrucciones.
+- Gestión de la identidad de los usuarios (login/logout).
+- Autorización para acceder a los dispositivos y funcionalidades.
+- Control de roles y permisos en base a perfiles (dueños, veterinarios, cuidadores).
 
-2. **Compatibilidad con sistemas iOS y Android:** La aplicación móvil de Masticat debe ser completamente funcional en los sistemas operativos iOS y Android, proporcionando una experiencia de usuario uniforme y sin errores en ambas plataformas.
+**Entidades principales:**
 
-3. **Cumplimiento de regulaciones de seguridad alimentaria:** El sistema debe cumplir con todas las normativas y regulaciones relacionadas con la seguridad alimentaria para mascotas, garantizando que el alimento dispensado mantenga su calidad y frescura.
+- Credenciales de Usuario
+- Roles
 
-4. **Seguridad en la comunicación:** Toda la comunicación entre el dispositivo dispensador y la aplicación móvil debe estar protegida mediante encriptación, para asegurar la privacidad y seguridad de los datos del usuario y las mascotas.
+**Eventos:**
 
-5. **Optimización del consumo energético:** El sistema debe estar diseñado para minimizar el consumo de energía, especialmente cuando el dispensador funcione en modo de batería, garantizando una larga duración de operación sin comprometer el rendimiento.
+- Acceso Autorizado
+- Permisos Actualizados
 
-6. **API segura y documentada:** La integración con sistemas de terceros debe realizarse a través de una API segura, bien documentada y fácil de utilizar por desarrolladores externos para extender las funcionalidades de Masticat sin comprometer la seguridad del sistema.
+**Servicios:**
 
+- Provisión de autenticación multi-factor para usuarios premium.
+- Gestión de políticas de seguridad.
 
+**Límites claros:**
+
+- No se gestionan los datos de configuración o alimentación, solo se controla el acceso y autenticación.
+
+### **3\. Subscriptions and Payments Context**
+
+**Dominio principal:** Gestión de suscripciones y pagos.
+
+**Responsabilidades:**
+
+- Gestión de las suscripciones premium y tiers.
+- Procesamiento de pagos (monitoreo de éxito/fallo en pagos).
+- Control del ciclo de vida de las suscripciones (actualización, cancelación).
+
+**Entidades principales:**
+
+- Suscripción
+- Método de Pago
+
+**Eventos:**
+
+- Suscripción Actualizada
+- Pago Procesado
+
+**Servicios:**
+
+- Integración con pasarelas de pago.
+- Control del acceso a funcionalidades premium (cámaras, control de temperatura, asistentes de voz).
+
+### **4\. Configuration and Planning Context**
+
+**Dominio principal:** Configuración de alimentación y planificación.
+
+**Responsabilidades:**
+
+- Programar el dispenso de comida.
+- Establecer horarios y frecuencia de alimentación.
+- Configurar la cantidad de comida y agua según parámetros del usuario.
+
+**Entidades principales:**
+
+- Horario de Alimentación
+- Configuración del Dispensador
+
+**Eventos:**
+
+- Horario de Alimentación Establecido
+- Configuración de Dispensador Actualizada
+
+**Servicios:**
+
+- Permitir ajustes remotos desde la app móvil.
+- Personalización de los horarios de alimentación por mascota.
+
+**Límites claros:**
+
+- La ejecución real de las órdenes de alimentación está en el contexto de "Operation".
+
+### **5\. Operation Context**
+
+**Dominio principal:** Ejecución operativa del dispensador y gestión física del sistema.
+
+**Responsabilidades:**
+
+- Dispensar comida y agua de acuerdo con los horarios o solicitudes manuales.
+- Verificar el nivel de comida y notificar cuando está bajo.
+- Identificar cuando la mascota está cerca mediante sensores de proximidad.
+- Enviar datos de uso y alimentación a la aplicación.
+
+**Entidades principales:**
+
+- Comida Dispensada
+- Nivel de Comida
+- Sensor de Proximidad
+
+**Eventos:**
+
+- Comida Dispensada
+- Nivel de Comida Actualizado
+- Proximidad Detectada
+
+**Servicios:**
+
+- Coordinación de sensores para detectar la cercanía de la mascota.
+- Actualización de los niveles de comida en tiempo real.
+- Ejecución de órdenes de alimentación programadas o manuales.
+
+### **6\. Service Execution Context**
+
+**Dominio principal:** Ejecución de comandos específicos relacionados con funcionalidades premium.
+
+**Responsabilidades:**
+
+- Control de temperatura del dispensador para mantener la comida fresca.
+- Activación de la cámara (si está disponible) para el monitoreo visual de la mascota.
+- Interacción con asistentes de voz para comandos remotos.
+
+**Entidades principales:**
+
+- Temperatura
+- Asistente de Voz
+
+**Eventos:**
+
+- Temperatura Ajustada
+- Comando de Voz Ejecutado
+
+**Servicios:**
+
+- Integración con plataformas como Alexa o Google Assistant.
+- Control de parámetros avanzados como temperatura y cámaras.
+
+### **7\. Monitoring Context**
+
+**Dominio principal:** Recolección de datos y análisis.
+
+**Responsabilidades:**
+
+- Recolección de datos de sensores (peso de comida, cantidad de agua).
+- Generación de reportes de uso y alimentación.
+- Análisis de hábitos alimenticios de las mascotas.
+
+**Entidades principales:**
+
+- Registro de Alimentación
+- Reporte de Hábitos
+
+**Eventos:**
+
+- Datos de Sensores Recopilados
+- Análisis de Hábitos Completado
+
+**Servicios:**
+
+- Provisión de datos históricos y visualización para el usuario.
+- Envío de notificaciones cuando se detectan hábitos fuera de lo normal.
+
+#### 4.1.1.2. Domain Message Flows Modeling.
+
+#### 4.1.1.3. Bounded Context Canvases.
+
+### 4.1.2. Context Mapping.
+
+### 4.1.3. Software Architecture.
+
+#### 4.1.3.1. Software Architecture System Landscape Diagram.
+
+#### 4.1.3.2. Software Architecture Context Level Diagrams.
+
+#### 4.1.3.3. Software Architecture Container Level Diagram
 
 # 4.2 Bounded Context:
 
