@@ -59,15 +59,17 @@ Conexión a bases de datos, APIs externas para gestión de perfiles, etc.
 - MascotaService
 - PreferenciasService
 
+  [![Image from Gyazo](https://i.gyazo.com/f2ff03a1578e31ba0aff7e627093d80e.png)](https://gyazo.com/f2ff03a1578e31ba0aff7e627093d80e)
+
 ###  4.2.1.5 Bounded Context Software Architecture Code Level Diagrams
 
 ####  4.2.1.6 Bounded Context Domain Layer Class Diagrams
 
-[Diagrama de Clases]
+[![Image from Gyazo](https://i.gyazo.com/0b2ac6a0943876b5074af96cf7a8e1f4.png)](https://gyazo.com/0b2ac6a0943876b5074af96cf7a8e1f4)
 
 ####  4.2.1.7 Bounded Context Database Design Diagram
 
-[Diagrama de Base de Datos]
+[![Image from Gyazo](https://i.gyazo.com/0b2ac6a0943876b5074af96cf7a8e1f4.png)](https://gyazo.com/0b2ac6a0943876b5074af96cf7a8e1f4)
 
 ## 2. IAM (Identity and Access Management) Bounded Context
 
@@ -131,16 +133,17 @@ Conexiones a sistemas de autenticación, servicios de identidad, etc.
 #### Componentes
 - AuthenticationService
 - AuthorizationService
+  [![Image from Gyazo](https://i.gyazo.com/4cdcb28e28274072fd5e56287e9e1f52.png)](https://gyazo.com/4cdcb28e28274072fd5e56287e9e1f52)
 
 ### 4.2.2 Bounded Context Software Architecture Code Level Diagrams
 
 #### 4.2.2.6 Bounded Context Domain Layer Class Diagrams
 
-[Diagrama de Clases]
+[![Image from Gyazo](https://i.gyazo.com/40668b834745e4c9685d015b0ec1b323.png)](https://gyazo.com/40668b834745e4c9685d015b0ec1b323)
 
 #### 4.2.2.7 Bounded Context Database Design Diagram
 
-[Diagrama de Base de Datos]
+[![Image from Gyazo](https://i.gyazo.com/fcf783eb71a37d0aab9567ffb493eb91.png)](https://gyazo.com/fcf783eb71a37d0aab9567ffb493eb91)
 
 ## 3. Subscriptions and Payments Bounded Context
 
@@ -204,16 +207,17 @@ Integración con pasarelas de pago, sistemas de facturación, etc.
 #### Componentes
 - SubscriptionService
 - PaymentService
+  [![Image from Gyazo](https://i.gyazo.com/63cfff9660b5b13ff3aaf4fbed9c0037.png)](https://gyazo.com/63cfff9660b5b13ff3aaf4fbed9c0037)
 
 ### 4.2.3. Bounded Context Software Architecture Code Level Diagrams
 
 ####  4.2.3.6 Bounded Context Domain Layer Class Diagrams
 
-[Diagrama de Clases]
+[![Image from Gyazo](https://i.gyazo.com/afa9477d3180a15a9d93c1c88a83d8bd.png)](https://gyazo.com/afa9477d3180a15a9d93c1c88a83d8bd)
 
 #### 4.2.3.7 Bounded Context Database Design Diagram
 
-[Diagrama de Base de Datos]
+[![Image from Gyazo](https://i.gyazo.com/fc0239d35ad93876834ba5ca3b3696b8.png)](https://gyazo.com/fc0239d35ad93876834ba5ca3b3696b8)
 
 ## 4. Configuration and Planning Bounded Context
 
@@ -279,15 +283,17 @@ Integración con dispositivos, sistemas de programación, etc.
 - DeviceConfigurationService
 - FeedingScheduleService
 
+[![Image from Gyazo](https://i.gyazo.com/4ed4bc077e969a7c25a1cebc84fd633f.png)](https://gyazo.com/4ed4bc077e969a7c25a1cebc84fd633f)
+
 ### 4.2.4. Bounded Context Software Architecture Code Level Diagrams
 
 #### 4.2.4.6 Bounded Context Domain Layer Class Diagrams
 
-[Diagrama de Clases]
+[![Image from Gyazo](https://i.gyazo.com/96b3b7525ad75f68412baf5f7c7d6fa3.png)](https://gyazo.com/96b3b7525ad75f68412baf5f7c7d6fa3)
 
 #### 4.2.4.7 Bounded Context Database Design Diagram
 
-[Diagrama de Base de Datos]
+[![Image from Gyazo](https://i.gyazo.com/7a987562a205f9fa45d4c079ffadf996.png)](https://gyazo.com/7a987562a205f9fa45d4c079ffadf996)
 
 ## 5. Operation Bounded Context
 
@@ -352,16 +358,18 @@ Integración con dispositivos de dispensado y sensores, etc.
 #### Componentes
 - DispensingService
 - SensorReadingService
+  
+[![Image from Gyazo](https://i.gyazo.com/7f641470b464c4f0ec51da2cb5993b80.png)](https://gyazo.com/7f641470b464c4f0ec51da2cb5993b80)
 
 ### 4.2.5 Bounded Context Software Architecture Code Level Diagrams
 
 #### 4.2.5.6 Bounded Context Domain Layer Class Diagrams
 
-[Diagrama de Clases]
+[![Image from Gyazo](https://i.gyazo.com/4cea9dd883ed38b5c9ead78606becbe6.png)](https://gyazo.com/4cea9dd883ed38b5c9ead78606becbe6)
 
 #### 4.2.5.7 Bounded Context Database Design Diagram
 
-[Diagrama de Base de Datos]
+[![Image from Gyazo](https://i.gyazo.com/0dc5e482773c62624805cb1d9697f190.png)](https://gyazo.com/0dc5e482773c62624805cb1d9697f190)
 
 ## 6. Service Execution Bounded Context
 
@@ -427,15 +435,17 @@ Integración con servicios de análisis, generación de reportes, etc.
 - HabitAnalysisService
 - ReportGenerationService
 
+  [![Image from Gyazo](https://i.gyazo.com/011ddfa5b0f679f2f4c1cd510ff2016b.png)](https://gyazo.com/011ddfa5b0f679f2f4c1cd510ff2016b)
+
 ### 4.2.6 Bounded Context Software Architecture Code Level Diagrams
 
 #### 4.2.6.6 Bounded Context Domain Layer Class Diagrams
 
-[Diagrama de Clases]
+[![Image from Gyazo](https://i.gyazo.com/9c5713b9b17a8ed94b7c761a47c16ff5.png)](https://gyazo.com/9c5713b9b17a8ed94b7c761a47c16ff5)
 
 #### 4.2.6.7 Bounded Context Database Design Diagram
 
-[Diagrama de Base de Datos]
+[![Image from Gyazo](https://i.gyazo.com/989bcd7b09ca352ea7359ac4464ab9e6.png)](https://gyazo.com/989bcd7b09ca352ea7359ac4464ab9e6)
 
 ## 7. Monitoring Bounded Context
 
@@ -501,12 +511,14 @@ Integración con sistemas de monitoreo, servicios de notificación, etc.
 - UsageDataService
 - NotificationService
 
+[![Image from Gyazo](https://i.gyazo.com/1a428fcedf93da2947f7ebba71ab7d35.png)](https://gyazo.com/1a428fcedf93da2947f7ebba71ab7d35)
+
 ### 4.2.7. Bounded Context Software Architecture Code Level Diagrams
 
 #### 4.2.7.6 Bounded Context Domain Layer Class Diagrams
 
-[Diagrama de Clases]
+[![Image from Gyazo](https://i.gyazo.com/a81c9e190be71f5042b50abf8b29137e.png)](https://gyazo.com/a81c9e190be71f5042b50abf8b29137e)
 
 #### 4.2.7.7 Bounded Context Database Design Diagram
 
-[Diagrama de Base de Datos]
+[![Image from Gyazo](https://i.gyazo.com/d0b5f10bb02f74169b6551266841e7ad.png)](https://gyazo.com/d0b5f10bb02f74169b6551266841e7ad)
