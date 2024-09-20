@@ -59,7 +59,7 @@ Conexión a bases de datos, APIs externas para gestión de perfiles, etc.
 - MascotaService
 - PreferenciasService
 
-  [![Image from Gyazo](https://i.gyazo.com/f2ff03a1578e31ba0aff7e627093d80e.png)](https://gyazo.com/f2ff03a1578e31ba0aff7e627093d80e)
+[![Image from Gyazo](https://i.gyazo.com/f2ff03a1578e31ba0aff7e627093d80e.png)](https://gyazo.com/f2ff03a1578e31ba0aff7e627093d80e)
 
 ###  4.2.1.5 Bounded Context Software Architecture Code Level Diagrams
 
@@ -133,7 +133,8 @@ Conexiones a sistemas de autenticación, servicios de identidad, etc.
 #### Componentes
 - AuthenticationService
 - AuthorizationService
-  [![Image from Gyazo](https://i.gyazo.com/4cdcb28e28274072fd5e56287e9e1f52.png)](https://gyazo.com/4cdcb28e28274072fd5e56287e9e1f52)
+ 
+ [![Image from Gyazo](https://i.gyazo.com/4cdcb28e28274072fd5e56287e9e1f52.png)](https://gyazo.com/4cdcb28e28274072fd5e56287e9e1f52)
 
 ### 4.2.2 Bounded Context Software Architecture Code Level Diagrams
 
@@ -207,6 +208,7 @@ Integración con pasarelas de pago, sistemas de facturación, etc.
 #### Componentes
 - SubscriptionService
 - PaymentService
+
   [![Image from Gyazo](https://i.gyazo.com/63cfff9660b5b13ff3aaf4fbed9c0037.png)](https://gyazo.com/63cfff9660b5b13ff3aaf4fbed9c0037)
 
 ### 4.2.3. Bounded Context Software Architecture Code Level Diagrams
