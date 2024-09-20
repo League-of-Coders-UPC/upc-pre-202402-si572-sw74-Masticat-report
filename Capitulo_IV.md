@@ -1,3 +1,154 @@
+# Capítulo IV: Strategic-Level Software Design
+
+## 4.1. Strategic-Level Attribute-Driven Design
+
+### 4.1.1. Design Purpose
+
+Propósito del Diseño: El propósito del diseño estratégico de Masticat es crear una solución automatizada de dispensación de alimentos para mascotas que elimine la necesidad de intervención humana constante y proporciona un control preciso sobre la alimentación de las mascotas. Esta solución busca ofrecer a los dueños de mascotas y clínicas veterinarias una herramienta confiable para la gestión de la alimentación, mejorando la salud y el bienestar de las mascotas a través de una nutrición controlada y monitorizada. Además, se busca proporcionar una plataforma que permita a los usuarios gestionar perfiles, recibir notificaciones, analizar hábitos alimenticios y acceder a funcionalidades premium para una experiencia completa y personalizada.
+
+### 4.1.2. Attribute-Driven Design Inputs
+
+#### 4.1.2.1. Primary Functionality (Primary User Stories)
+
+| Epic / User Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+|----------------------|--------|-------------|-------------------------|---------------------------|
+| US01 | Crear perfil de usuario | Como nuevo usuario, quiero crear mi perfil en la aplicación Masticat para comenzar a utilizar el sistema | Given que soy un nuevo usuario<br>When ingreso mis datos personales y creo una contraseña<br>Then se crea mi perfil de usuario y puedo acceder a la aplicación | E01 |
+| US02 | Añadir perfil de mascota | Como usuario registrado, quiero añadir el perfil de mi mascota para personalizar su plan de alimentación | Given que estoy autenticado en la aplicación<br>When ingreso los datos de mi mascota (nombre, especie, raza, edad, peso)<br>Then se crea un perfil para mi mascota asociado a mi cuenta | E01 |
+| US03 | Conectar dispensador | Como usuario, quiero conectar mi dispensador Masticat a la red WiFi para controlarlo a través de la aplicación | Given que tengo un dispensador Masticat<br>When sigo las instrucciones de configuración en la app<br>Then el dispensador se conecta exitosamente a mi red WiFi y aparece como dispositivo activo en mi app | E02 |
+| US04 | Programar horarios de alimentación | Como dueño de mascota, quiero programar horarios de alimentación para que mi mascota reciba sus comidas de forma regular | Given que tengo un dispensador conectado y un perfil de mascota<br>When establecer horarios de alimentación en la aplicación<br>Then el dispensador libera alimento en los horarios programados | E02 |
+
+#### 4.1.2.2. Quality Attribute Scenarios
+
+**Scenario 1: Reliability**
+- Atributo: Continuidad del servicio
+- Estímulo: Corte de energía eléctrica
+- Artefacto: Sistema de dispensación Masticat
+- Entorno: Condiciones normales de operación
+- Respuesta: El sistema debe continuar funcionando con la batería de respaldo
+- Medida: Tiempo de operación continua sin energía eléctrica (mínimo 24 horas)
+
+**Scenario 2: Usability**
+- Atributo: Facilidad de configuración
+- Estímulo: Primera instalación del dispositivo
+- Artefacto: Aplicación móvil de Masticat
+- Entorno: Hogar del usuario
+- Respuesta: El usuario debe poder configurar el dispositivo y programar la primera alimentación
+- Medida: Tiempo para completar la configuración inicial (menos de 15 minutos)
+
+**Scenario 3: Performance**
+- Atributo: Tiempo de respuesta
+- Estímulo: Detección de mascota cerca del dispensador
+- Artefacto: Sensores y mecanismo de dispensación
+- Entorno: Operación normal
+- Respuesta: El sistema debe identificar a la mascota y dispensar el alimento
+- Medida: Tiempo desde la detección hasta la dispensación (menos de 5 segundos)
+
+#### 4.1.2.3. Constraints
+
+1. El dispositivo debe ser compatible con diferentes tipos y tamaños de alimento seco para mascotas.
+2. La aplicación móvil debe funcionar en sistemas iOS y Android.
+3. El sistema debe cumplir con las regulaciones de seguridad alimentaria para mascotas.
+4. La comunicación entre el dispositivo y la aplicación debe ser segura y encriptada.
+5. El consumo de energía del dispositivo debe ser optimizado para una larga duración de la batería.
+6. La integración con sistemas de terceros debe realizarse a través de una API segura y documentada.
+
+### 4.1.3. Architectural Drivers Backlog
+
+**Driver 1: Precisión en la Dispensación**
+- Descripción: La precisión en la medición y dispensación de alimentos es crucial para mantener dietas controladas.
+- Importancia para Stakeholders: Alta
+- Impacto en Architecture Technical Complexity: Media
+
+**Driver 2: Conectividad y Control Remoto**
+- Descripción: La capacidad de controlar y monitorear el dispositivo remotamente es esencial para la comodidad del usuario.
+- Importancia para Stakeholders: Alta
+- Impacto en Architecture Technical Complexity: Alta
+
+**Driver 3: Identificación de Mascotas**
+- Descripción: La habilidad de identificar diferentes mascotas permite una alimentación personalizada y un seguimiento preciso.
+- Importancia para Stakeholders: Media
+- Impacto en Architecture Technical Complexity: Alta
+
+**Driver 4: Análisis de Datos y Reportes**
+- Descripción: La capacidad de generar informes detallados y análisis de hábitos alimenticios es clave para el valor añadido del producto.
+- Importancia para Stakeholders: Alta
+- Impacto en Architecture Technical Complexity: Media
+
+### 4.1.4. Architectural Design Decisions
+
+1. Implementar un sistema de sensores RFID para la identificación precisa de mascotas.
+2. Utilizar una arquitectura basada en la nube para el almacenamiento de datos y el control remoto.
+3. Desarrollar una aplicación móvil híbrida utilizando React Native para asegurar la compatibilidad con iOS y Android.
+4. Implementar un sistema de medición basado en peso para garantizar la precisión en la dispensación de alimentos.
+5. Utilizar una arquitectura de microservicios para facilitar la escalabilidad y el mantenimiento del backend.
+6. Implementar un sistema de notificaciones push para mantener a los usuarios informados en tiempo real.
+
+### 4.1.5. Quality Attribute Scenario Refinements
+
+**Scenario Refinement for Reliability**
+- Scenario(s): Continuidad del servicio durante cortes de energía
+- Business Goals: Asegurar la alimentación constante de las mascotas
+- Relevant Quality Attributes: Confiabilidad, Disponibilidad
+- Stimulus: Corte de energía eléctrica
+- Scenario Components: Activación de la batería de respaldo, mantenimiento de funciones críticas
+- Stimulus Source: Falla en el suministro eléctrico
+- Environment: Hogar o clínica veterinaria
+- Artifact (if Known): Sistema de alimentación Masticat
+- Response: Continuación de la operación normal del dispositivo
+- Response Measure: Duración de la operación con batería (mínimo 24 horas)
+- Questions: 
+  - ¿Cómo se notifica al usuario sobre el cambio a batería? 
+  - ¿Cómo se prioriza el uso de energía en modo batería?
+- Issues: Balancear la duración de la batería con la funcionalidad del dispositivo
+
+**Scenario Refinement for Usability**
+- Scenario(s): Facilidad de configuración inicial
+- Business Goals: Maximizar la adopción y satisfacción del usuario
+- Relevant Quality Attributes: Usabilidad, Experiencia de Usuario
+- Stimulus: Primera instalación y configuración del dispositivo
+- Scenario Components: Guía paso a paso, configuración de perfil de mascota, programación de primera alimentación
+- Stimulus Source: Nuevo usuario
+- Environment: Aplicación móvil y dispositivo Masticat
+- Artifact (if Known): Interfaz de usuario de la aplicación móvil
+- Response: Configuración completa y exitosa del dispositivo
+- Response Measure: Tiempo para completar la configuración (objetivo: menos de 15 minutos)
+- Questions: 
+  - ¿Cómo se puede simplificar aún más el proceso de configuración? 
+  - ¿Qué pasos son absolutamente necesarios?
+- Issues: Equilibrar la simplicidad con la necesidad de recopilar información esencial sobre la mascota
+
+**Scenario Refinement for Performance**
+- Scenario(s): Respuesta rápida en la dispensación de alimentos
+- Business Goals: Asegurar una experiencia fluida y confiable para las mascotas y sus dueños
+- Relevant Quality Attributes: Rendimiento, Eficiencia
+- Stimulus: Mascota se acerca al dispensador durante un horario programado de alimentación
+- Scenario Components: Detección de la mascota, verificación del horario, medición y dispensación del alimento
+- Stimulus Source: Presencia de la mascota
+- Environment: Hogar del usuario, condiciones normales de operación
+- Artifact (if Known): Sensores del dispensador Masticat, mecanismo de dispensación
+- Response: Dispensación precisa y oportuna del alimento
+- Response Measure: Tiempo total desde la detección hasta la dispensación completa (objetivo: menos de 5 segundos)
+- Questions: 
+  - ¿Cómo se maneja la situación si múltiples mascotas se acercan al mismo tiempo? 
+  - ¿Cómo se asegura la precisión en la cantidad dispensada?
+- Issues: Balancear la velocidad de respuesta con la precisión en la medición del alimento
+
+#### 4.1.2.3. Constraints (Expanded)
+
+1. **Compatibilidad con diferentes tipos de alimento:** El dispositivo debe ser compatible con distintos tipos y tamaños de alimento seco para mascotas, asegurando que funcione de manera eficiente sin obstrucciones.
+
+2. **Compatibilidad con sistemas iOS y Android:** La aplicación móvil de Masticat debe ser completamente funcional en los sistemas operativos iOS y Android, proporcionando una experiencia de usuario uniforme y sin errores en ambas plataformas.
+
+3. **Cumplimiento de regulaciones de seguridad alimentaria:** El sistema debe cumplir con todas las normativas y regulaciones relacionadas con la seguridad alimentaria para mascotas, garantizando que el alimento dispensado mantenga su calidad y frescura.
+
+4. **Seguridad en la comunicación:** Toda la comunicación entre el dispositivo dispensador y la aplicación móvil debe estar protegida mediante encriptación, para asegurar la privacidad y seguridad de los datos del usuario y las mascotas.
+
+5. **Optimización del consumo energético:** El sistema debe estar diseñado para minimizar el consumo de energía, especialmente cuando el dispensador funcione en modo de batería, garantizando una larga duración de operación sin comprometer el rendimiento.
+
+6. **API segura y documentada:** La integración con sistemas de terceros debe realizarse a través de una API segura, bien documentada y fácil de utilizar por desarrolladores externos para extender las funcionalidades de Masticat sin comprometer la seguridad del sistema.
+
+
+
 # 4.2 Bounded Context:
 
 ## 4.2.1 Profile Bounded Context
