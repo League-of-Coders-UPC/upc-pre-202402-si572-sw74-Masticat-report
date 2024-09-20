@@ -235,13 +235,21 @@ Leyenda:
 
 ### 4.1.2. Context Mapping.
 
+![](https://i.gyazo.com/516e6344120871067e2b81c841e5947e.png)
+
 ### 4.1.3. Software Architecture.
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram.
 
+![](https://i.gyazo.com/4c411467e0b1e0d1bf4e8ad4d30f0617.png)
+
 #### 4.1.3.2. Software Architecture Context Level Diagrams.
 
+![](https://i.gyazo.com/6e3c07fd5c6e790c725eb7c61dac3c3e.png)
+
 #### 4.1.3.3. Software Architecture Container Level Diagram
+
+![](https://i.gyazo.com/ec5ea675b6b3404e00a5da066c4c50f5.png)
 
 # 4.2 Bounded Context:
 
