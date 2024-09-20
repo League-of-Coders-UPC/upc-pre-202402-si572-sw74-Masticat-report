@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b18146e3-114d-402d-8517-27d6578bf2d8)# Capítulo IV: Strategic-Level Software Design
+# Capítulo IV: Strategic-Level Software Design
 
 ## 4.1. Strategic-Level Domain-Driven Design.
 
@@ -215,7 +215,23 @@ Leyenda:
 
 #### 4.1.1.2. Domain Message Flows Modeling.
 
+![](https://i.gyazo.com/5df3fd81b10ffae91e90589fb9f013c3.png)
+
 #### 4.1.1.3. Bounded Context Canvases.
+
+![](https://i.gyazo.com/5ae9f6549f020c6d89c68b597056abfe.png)
+
+![](https://i.gyazo.com/17567cdfc9034fa3cc90b0ee806e2296.png)
+
+![](https://i.gyazo.com/0f81f62c7c0486920bbf3bc42a4830d3.png)
+
+![](https://i.gyazo.com/50be0d7e161a2c646e14e2443cbbc700.png)
+
+![](https://i.gyazo.com/9ac22d918e18fa93a1817a35d1658c39.png)
+
+![](https://i.gyazo.com/a67304a57a539771846ff52ca8a7e100.png)
+
+![](https://i.gyazo.com/7868057c2f982cdbac7055d0d8496274.png)
 
 ### 4.1.2. Context Mapping.
 
