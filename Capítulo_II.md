@@ -133,7 +133,7 @@ Segmento Veterinaria:
 
 **Entrevista  segmento doméstico**
 
-![](Aspose.Words.83bf1f15-3c91-48ce-8acb-c2ef00744d40.001.png)
+![image12](https://github.com/user-attachments/assets/7e00b024-0c55-4019-8aba-4327266aa48f)
 Nombres: Eduard
 Apellidos: Travezaño
 Edad: 20 años
@@ -149,9 +149,7 @@ Eduard es un joven de 20 años, soltero que estudia ingeniería de software y re
 
 
 
-
-![](Aspose.Words.83bf1f15-3c91-48ce-8acb-c2ef00744d40.002.png)
-
+![image6](https://github.com/user-attachments/assets/e9416657-9b25-4927-8e50-f6df15ace917)
 Nombres:Alonso Fernando 
 
 Apellidos: Raules Sazañopa
@@ -171,7 +169,7 @@ Alonso es una joven de 20 años, soltero, que reside en el distrito de San Juan 
 
 
 
-![](Aspose.Words.83bf1f15-3c91-48ce-8acb-c2ef00744d40.003.png)
+![image1](https://github.com/user-attachments/assets/5885b129-1bb7-4134-9461-8f12bee3f401)
 
 Nombres:Andrea 
 
@@ -204,8 +202,7 @@ Andrea es una joven casada de 24 años, que vive en el distrito de Miraflores. A
 
 
 
-
-![](Aspose.Words.83bf1f15-3c91-48ce-8acb-c2ef00744d40.004.png)
+![image4](https://github.com/user-attachments/assets/59647825-d8e4-468b-9e37-9b6c56c82dc3)
 
 Nombres:Fabricio 
 
@@ -236,8 +233,7 @@ Fabricio es un joven de 21 años, soltero que reside en el distrito de San Juan 
 
 
 
-![](Aspose.Words.83bf1f15-3c91-48ce-8acb-c2ef00744d40.005.png)
-
+![image9](https://github.com/user-attachments/assets/a4222384-e6d5-4101-b412-08015639bb43)
 
 Nombres:Isma
 
@@ -270,8 +266,7 @@ Isma es un joven de 23 años, soltero, que reside en el distrito de Callao. Se d
 
 
 
-![](Aspose.Words.83bf1f15-3c91-48ce-8acb-c2ef00744d40.006.png)
-
+![image11](https://github.com/user-attachments/assets/e5c4b4ef-d22e-461f-b897-86de5a4b3aa4)
 
 Nombres:Mirelia
 
@@ -329,9 +324,9 @@ Mirelia es una joven de 21 años, soltera que reside en Rosario, Argentina. Es v
 
 A continuación se presentan los User Personas que se realizaron teniendo en cuenta los resultados de las entrevistas.
 
-![](Aspose.Words.83bf1f15-3c91-48ce-8acb-c2ef00744d40.007.png)
+![image10](https://github.com/user-attachments/assets/ce68dc05-2116-4322-88d6-b7d3137e1e89)
+![image8](https://github.com/user-attachments/assets/05c0b375-8c11-420f-89ce-133f3c87bef2)
 
-![](Aspose.Words.83bf1f15-3c91-48ce-8acb-c2ef00744d40.008.png)
 
 2\.3.2. User Task Matrix.
 
@@ -353,19 +348,16 @@ En esta sección, presentamos el User Task Matrix para Masticat, que se centra e
 
 En esta sección, presentamos el User Journey Map para José, nuestro User Persona que representa al segmento de dueños de mascotas en el ámbito doméstico. Este mapa ilustra el viaje end-to-end de José en un día típico alimentando a su mascota, desde la planificación hasta la reflexión sobre la rutina de alimentación. El objetivo es comprender la experiencia actual de José, sin la intervención de Masticat, para identificar áreas de oportunidad y puntos de mejora en el proceso de alimentación de su mascota.
 
-![](Aspose.Words.83bf1f15-3c91-48ce-8acb-c2ef00744d40.009.png)
-
-![](Aspose.Words.83bf1f15-3c91-48ce-8acb-c2ef00744d40.010.png)
+![image2](https://github.com/user-attachments/assets/048248da-e45e-4bd5-9aba-a5acca87f3ae)
+![image3](https://github.com/user-attachments/assets/485593aa-3136-47c1-8816-2b92c6ba3e52)
 
 2\.3.4. Empathy Mapping.
 
-![](Aspose.Words.83bf1f15-3c91-48ce-8acb-c2ef00744d40.011.png)
+![image7](https://github.com/user-attachments/assets/7074844c-b24a-4981-a979-b1a0783e90ea)
 
 2\.3.5. As-is Scenario Mapping.
 
-![](Aspose.Words.83bf1f15-3c91-48ce-8acb-c2ef00744d40.012.png)
-
-
+![image5](https://github.com/user-attachments/assets/49f09c4b-3957-4ccb-8817-6f18e730d769)
 
 2\.4. Ubiquitous Language.
 
