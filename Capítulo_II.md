@@ -139,7 +139,7 @@ Apellidos: Travezaño
 Edad: 20 años
 Distrito: San Juan de Lurigancho
 
-URL https://upcedupe-my.sharepoint.com/:v:/g/personal/u201910655\_upc\_edu\_pe/EQX0kYvRXg9HsXPPXPUBVrgB7xhqoHozM30Zl95c3HhXiA?e=87eIw1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+URL https://acortar.link/F1nggJ
 Inicio: 00:00
 Duración: 6:49
 
@@ -157,7 +157,7 @@ Apellidos: Raules Sazañopa
 Edad:20 años
 Distrito:  San Juan de Lurigancho
 
-URL https://upcedupe-my.sharepoint.com/:v:/g/personal/u201910655\_upc\_edu\_pe/EQX0kYvRXg9HsXPPXPUBVrgB7xhqoHozM30Zl95c3HhXiA?e=87eIw1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+URL https://acortar.link/F1nggJ
 Inicio: 06:50
 Duración: 04:70
 
@@ -182,7 +182,7 @@ Género: Femenino
 Estado civil: Casada
 Distrito: Miraflores
 
-URL https://upcedupe-my.sharepoint.com/:v:/g/personal/u201910655\_upc\_edu\_pe/EQX0kYvRXg9HsXPPXPUBVrgB7xhqoHozM30Zl95c3HhXiA?e=87eIw1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+URL https://acortar.link/F1nggJ
 Inicio: 11:23
 Duración: 4.99
 
@@ -216,7 +216,7 @@ Estado civil: Soltero
 
 Distrito: San Juan de Lurigancho
 
-URL https://upcedupe-my.sharepoint.com/:v:/g/personal/u201910655\_upc\_edu\_pe/EQX0kYvRXg9HsXPPXPUBVrgB7xhqoHozM30Zl95c3HhXiA?e=87eIw1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+URL https://acortar.link/F1nggJ
 Inicio:16:43
 Duración: 5:67
 
@@ -247,7 +247,7 @@ Estado civil: Soltero
 
 Distrito: Callao
 
-URL https://upcedupe-my.sharepoint.com/:v:/g/personal/u201910655\_upc\_edu\_pe/EQX0kYvRXg9HsXPPXPUBVrgB7xhqoHozM30Zl95c3HhXiA?e=87eIw1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+URL https://acortar.link/F1nggJ
 Inicio:22:02
 Duración: 3:98
 
@@ -280,7 +280,7 @@ Estado civil: Soltera
 
 Distrito: Rosario
 
-URL https://upcedupe-my.sharepoint.com/:v:/g/personal/u201910655\_upc\_edu\_pe/EQX0kYvRXg9HsXPPXPUBVrgB7xhqoHozM30Zl95c3HhXiA?e=87eIw1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+URL https://acortar.link/F1nggJ
 Inicio:26:00
 
 Duración: 04:50
