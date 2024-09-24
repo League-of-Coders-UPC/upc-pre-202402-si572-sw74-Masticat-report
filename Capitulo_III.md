@@ -71,15 +71,40 @@
 
 | # Orden | User Story Id | Título | Descripción | Story Points |
 |---------|---------------|--------|-------------|--------------|
-| 1 | US09 | Explorar características del producto | Como visitante del sitio web, quiero explorar las características de Masticat para entender cómo puede beneficiar a mi mascota | 3 |
-| 2 | US10 | Comparar planes de suscripción | Como visitante interesado, quiero comparar los diferentes planes de suscripción para elegir el más adecuado para mis necesidades | 2 |
-| 3 | US01 | Crear perfil de usuario | Como nuevo usuario, quiero crear mi perfil en la aplicación Masticat para comenzar a utilizar el sistema | 3 |
-| 4 | US02 | Añadir perfil de mascota | Como usuario registrado, quiero añadir el perfil de mi mascota para personalizar su plan de alimentación | 2 |
-| 5 | US03 | Conectar dispensador | Como usuario, quiero conectar mi dispensador Masticat a la red WiFi para controlarlo a través de la aplicación | 5 |
-| 6 | US04 | Programar horarios de alimentación | Como dueño de mascota, quiero programar horarios de alimentación para que mi mascota reciba sus comidas de forma regular | 5 |
-| 7 | US05 | Recibir notificaciones de alimentación | Como dueño de mascota, quiero recibir notificaciones cuando mi mascota ha sido alimentada para estar al tanto de su rutina | 3 |
-| 8 | US06 | Ver historial de alimentación | Como dueño de mascota, quiero ver un historial de alimentación de mi mascota para monitorear sus hábitos alimenticios | 3 |
-| 9 | TS01 | Autenticar con API | Como desarrollador, quiero autenticarme en la API de Masticat para acceder a los endpoints protegidos | 5 |
-| 10 | TS02 | Obtener datos de alimentación | Como desarrollador, quiero obtener datos de alimentación de una mascota específica a través de la API para integrarlos en mi aplicación | 5 |
-| 11 | US07 | Generar reporte mensual | Como usuario premium, quiero generar un reporte mensual de los hábitos alimenticios de mi mascota para compartirlo con mi veterinario | 8 |
-| 12 | US08 | Activar control de temperatura | Como usuario premium, quiero activar el control de temperatura del dispensador para mantener el alimento en condiciones óptimas | 8 |
+| 1 | US01 | Explorar características del producto | Como visitante del sitio web, quiero explorar las características de Masticat para entender cómo puede beneficiar a mi mascota | 5 |
+| 2 | US02 | Comparar planes de suscripción | Como visitante interesado, quiero comparar los diferentes planes de suscripción para elegir el más adecuado para mis necesidades | 3 |
+| 3 | US03 | Diseñar interfaz de usuario | Como diseñador UX/UI, quiero crear un diseño intuitivo y atractivo para la aplicación Masticat | 13 |
+| 4 | US04 | Implementar navegación principal | Como desarrollador frontend, quiero implementar la navegación principal de la aplicación para que los usuarios puedan acceder a todas las funcionalidades | 8 |
+| 5 | US05 | Crear componentes reutilizables | Como desarrollador frontend, quiero crear componentes reutilizables para mantener la consistencia y facilitar el mantenimiento de la aplicación | 13 |
+| 6 | US06 | Implementar página de login | Como usuario, quiero poder iniciar sesión en la aplicación para acceder a mis datos y configuraciones | 5 |
+| 7 | US07 | Crear formulario de registro | Como nuevo usuario, quiero poder registrarme en la aplicación para comenzar a usar Masticat | 5 |
+| 8 | US08 | Desarrollar interfaz de agregar mascota | Como usuario registrado, quiero poder agregar los datos de mi mascota a través de una interfaz amigable | 8 |
+| 9 | US09 | Implementar página de agregar dispositivo | Como usuario, quiero poder agregar un nuevo dispositivo Masticat a mi cuenta | 8 |
+| 10 | US10 | Crear vista de detalles del dispositivo | Como usuario, quiero ver los detalles de mi dispositivo Masticat, incluyendo su identificación hash | 5 |
+| 11 | US11 | Diseñar planes de suscripción | Como gerente de producto, quiero diseñar diferentes planes de suscripción para ofrecer opciones a los usuarios | 8 |
+| 12 | US12 | Integrar PayPal para pagos | Como desarrollador, quiero integrar PayPal en el sistema de suscripciones para procesar los pagos de los usuarios | 13 |
+| 13 | US13 | Crear perfil de usuario | Como nuevo usuario, quiero crear mi perfil en la aplicación Masticat para comenzar a utilizar el sistema | 5 |
+| 14 | US14 | Añadir perfil de mascota | Como usuario registrado, quiero añadir el perfil de mi mascota para personalizar su plan de alimentación | 5 |
+| 15 | US15 | Conectar dispensador | Como usuario, quiero conectar mi dispensador Masticat a la red WiFi para controlarlo a través de la aplicación | 13 |
+| 16 | US16 | Programar horarios de alimentación | Como dueño de mascota, quiero programar horarios de alimentación para que mi mascota reciba sus comidas de forma regular | 8 |
+| 17 | US17 | Recibir notificaciones de alimentación | Como dueño de mascota, quiero recibir notificaciones cuando mi mascota ha sido alimentada para estar al tanto de su rutina | 5 |
+| 18 | US18 | Ver historial de alimentación | Como dueño de mascota, quiero ver un historial de alimentación de mi mascota para monitorear sus hábitos alimenticios | 8 |
+| 19 | US19 | Generar reporte mensual | Como usuario premium, quiero generar un reporte mensual de los hábitos alimenticios de mi mascota para compartirlo con mi veterinario | 13 |
+| 20 | US20 | Activar control de temperatura | Como usuario premium, quiero activar el control de temperatura del dispensador para mantener el alimento en condiciones óptimas | 8 |
+| 21 | TS01 | Implementar API Gateway | Como desarrollador, quiero implementar un API Gateway para centralizar el acceso a los microservicios de Masticat | 13 |
+| 22 | TS02 | Implementar microservicio IAM | Como desarrollador de seguridad, quiero implementar el microservicio IAM para gestionar la autenticación y autorización en Masticat | 13 |
+| 23 | TS03 | Implementar microservicio de Perfil | Como desarrollador backend, quiero implementar el microservicio de Perfil para gestionar la información de usuarios y mascotas | 8 |
+| 24 | TS04 | Implementar microservicio de Suscripción | Como desarrollador backend, quiero implementar el microservicio de Suscripción para gestionar los planes de usuario | 8 |
+| 25 | TS05 | Implementar microservicio de Planificación | Como desarrollador backend, quiero implementar el microservicio de Planificación para gestionar los horarios de alimentación | 8 |
+| 26 | TS06 | Implementar microservicio de Operación | Como desarrollador backend, quiero implementar el microservicio de Operación para controlar el funcionamiento del dispensador | 13 |
+| 27 | TS07 | Implementar microservicio de Servicio | Como desarrollador backend, quiero implementar el microservicio de Servicio para gestionar las solicitudes de soporte y mantenimiento | 8 |
+| 28 | TS08 | Implementar microservicio de Monitoreo | Como desarrollador backend, quiero implementar el microservicio de Monitoreo para recopilar y analizar datos de uso del dispensador | 13 |
+| 29 | TS09 | Implementar medición de peso de comida | Como ingeniero IoT, quiero implementar la medición del peso de la comida en el dispensador | 8 |
+| 30 | TS10 | Implementar medición de agua | Como ingeniero IoT, quiero implementar la medición de la cantidad de agua en el dispensador | 8 |
+| 31 | TS11 | Implementar sensor de proximidad | Como ingeniero IoT, quiero implementar un sensor para detectar cuando la mascota está cerca del dispensador | 5 |
+| 32 | TS12 | Implementar envío de datos de uso | Como ingeniero IoT, quiero implementar el envío de datos de uso del dispensador a la nube | 8 |
+| 33 | TS13 | Implementar control remoto de dispensado | Como ingeniero IoT, quiero implementar la funcionalidad de dispensar comida remotamente desde la aplicación móvil | 8 |
+| 34 | TS14 | Implementar cámara (premium) | Como ingeniero IoT, quiero implementar una cámara en el dispensador para usuarios premium | 13 |
+| 35 | TS15 | Implementar procesamiento local de datos | Como ingeniero IoT, quiero implementar el procesamiento local de datos en el dispositivo Masticat | 13 |
+| 36 | TS16 | Implementar decisiones en tiempo real | Como ingeniero IoT, quiero implementar la toma de decisiones en tiempo real en el dispositivo Masticat basada en el procesamiento local | 13 |
+| 37 | TS17 | Optimizar sincronización de datos | Como ingeniero de sistemas, quiero optimizar la sincronización de datos entre el dispositivo Masticat y la nube para reducir el consumo de ancho de banda | 8 |
