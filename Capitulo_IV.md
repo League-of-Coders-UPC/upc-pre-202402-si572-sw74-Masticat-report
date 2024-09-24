@@ -253,15 +253,19 @@ Premium Subscription & Features
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram.
 
-![](https://i.gyazo.com/4c411467e0b1e0d1bf4e8ad4d30f0617.png)
+![]()
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams.
 
-![](https://i.gyazo.com/6e3c07fd5c6e790c725eb7c61dac3c3e.png)
+![](https://i.gyazo.com/24b0e1c664550483d4a5c072a72ecc78.png)
 
 #### 4.1.3.3. Software Architecture Container Level Diagram
 
-![](https://i.gyazo.com/ec5ea675b6b3404e00a5da066c4c50f5.png)
+![](https://i.gyazo.com/308ec388e1c55b5f730ecafeb65ae075.png)
+
+#### 4.1.3.4. Software Architecture Deployment Diagrams
+
+![]()
 
 # 4.2 Bounded Context:
 
