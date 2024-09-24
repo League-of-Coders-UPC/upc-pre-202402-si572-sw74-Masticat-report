@@ -30,16 +30,13 @@
 # 3.3. Impact Mapping
 
 <div align="center">
-  <img src="https://github.com/League-of-Coders-UPC/upc-pre-202402-si572-sw74-Masticat-report/blob/main/Resources/images/impact_mapping.png" alt="to_be">
+  <img src="https://github.com/League-of-Coders-UPC/upc-pre-202402-si572-sw74-Masticat-report/blob/main/Resources/images/impact_mapping_01.png" alt="to_be">
 </div>
 
 <div align="center">
-  <img src="https://github.com/League-of-Coders-UPC/upc-pre-202402-si572-sw74-Masticat-report/blob/main/Resources/images/impact_mapping_2.png" alt="to_be">
+  <img src="https://github.com/League-of-Coders-UPC/upc-pre-202402-si572-sw74-Masticat-report/blob/main/Resources/images/impact_mapping_02.png" alt="to_be">
 </div>
 
-<div align="center">
-  <img src="https://github.com/League-of-Coders-UPC/upc-pre-202402-si572-sw74-Masticat-report/blob/main/Resources/images/impact_mapping_3.png" alt="to_be">
-</div>
 
 # 3.4. Product Backlog
 
