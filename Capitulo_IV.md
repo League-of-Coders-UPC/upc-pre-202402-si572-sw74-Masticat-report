@@ -4,21 +4,33 @@
 
 ### 4.1.1. EventStorming.
 
-Leyenda:
+Legend:
 
-![](https://i.gyazo.com/ff0028ae1632193137d151473b94c701.png)
+![](https://i.gyazo.com/271896d5e75954538067393193cf75d0.jpg)
 
-![](https://i.gyazo.com/46e66e4be5903b664951fe0b8a723fe5.png)
+Configuration & Daily Uses
 
-![](https://i.gyazo.com/0c3122b7c269c9697835ec151d44913c.png)
+![](https://i.gyazo.com/01e9d129d47f58fca0daae06989ec692.jpg)
 
-![](https://i.gyazo.com/4285cb4c9823a91bb878fb58ba5dfc13.png)
+Monitoring & Analysis
 
-![](https://i.gyazo.com/7e8f86efaf6e0d06dae554fa426e3a79.png)
+![](https://i.gyazo.com/cc10e198140a58173c73c8bb69a31c7a.jpg)
 
-![](https://i.gyazo.com/e7fed2c8ba8537d04d7c292e9cdfec98.png)
+Maintentance & Alerts
 
-![](https://i.gyazo.com/07244f58bf3669325c885a07a2a9d2b8.png)
+![](https://i.gyazo.com/6aa35ade3948d808029dab2b6dc34e96.jpg)
+
+Remote Control
+
+![](https://i.gyazo.com/290408a7061ef6172013a017fa79687c.jpg)
+
+Multiple Pet Management
+
+![](https://i.gyazo.com/8d63ddc94062e5747f328006f6407d4f.jpg)
+
+Premium Subscription & Features
+
+![](https://i.gyazo.com/a2eacef16333839894076c40fa45ade5.jpg)
 
 #### 4.1.1.1. Candidate Context Discovery.
 
