@@ -115,7 +115,7 @@ Premium Subscription & Features
 **Servicios:**
 
 - Integración con pasarelas de pago.
-- Control del acceso a funcionalidades premium (cámaras, control de temperatura, asistentes de voz).
+- Control del acceso a funcionalidades premium (cámaras).
 
 ### **4\. Configuration and Planning Context**
 
@@ -181,24 +181,19 @@ Premium Subscription & Features
 
 **Responsabilidades:**
 
-- Control de temperatura del dispensador para mantener la comida fresca.
 - Activación de la cámara (si está disponible) para el monitoreo visual de la mascota.
-- Interacción con asistentes de voz para comandos remotos.
 
 **Entidades principales:**
 
-- Temperatura
-- Asistente de Voz
+- Cámara
 
 **Eventos:**
 
-- Temperatura Ajustada
-- Comando de Voz Ejecutado
+- Visualización de la mascota
 
 **Servicios:**
 
-- Integración con plataformas como Alexa o Google Assistant.
-- Control de parámetros avanzados como temperatura y cámaras.
+- Control de parámetros avanzados como cámaras.
 
 ### **7\. Monitoring Context**
 
