@@ -248,7 +248,7 @@ Premium Subscription & Features
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram.
 
-![]()
+![](https://i.gyazo.com/24b0e1c664550483d4a5c072a72ecc78.png)
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams.
 
