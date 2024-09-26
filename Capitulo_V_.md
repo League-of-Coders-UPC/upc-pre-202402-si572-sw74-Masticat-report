@@ -181,6 +181,12 @@ El Landing Page se desarrolló utilizando un prototipo de fidelidad intermedia e
 ## 5.4. Applications UX/UI Design.
 
 ### 5.4.1. Applications Wireframes.
+![image](https://github.com/user-attachments/assets/361549dc-14c1-470c-8d9a-37efaa181646)
+![image](https://github.com/user-attachments/assets/e26453ac-b153-4c04-8f97-0f40558b7663)
+![image](https://github.com/user-attachments/assets/a50ab3b3-67c4-45f2-9b8c-f1d2ff615105)
+![image](https://github.com/user-attachments/assets/3553e07d-5ba9-455a-962f-c9631d8c0130)
+![image](https://github.com/user-attachments/assets/75cce9c3-788f-45cc-a3e2-06c50a20b26c)
+![image](https://github.com/user-attachments/assets/a26bc778-5d29-4306-a4f2-8c3bfdae8fed)
 
 ### 5.4.2. Applications Wireflow Diagrams.
 
