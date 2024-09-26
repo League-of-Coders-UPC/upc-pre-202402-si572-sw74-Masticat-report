@@ -13,17 +13,29 @@ Hemos elegido llamar a nuestra solución "Masticat" debido a su enfoque en ayuda
 **Typography:**
 Hemos seleccionado cuidadosamente las fuentes "Poppins" y "Satisfy" para transmitir una imagen moderna y legible.
 
+[![Image from Gyazo](https://i.gyazo.com/9383947659daaf8a4cb3360caf3b78f7.png)](https://gyazo.com/9383947659daaf8a4cb3360caf3b78f7)
+
+[![Image from Gyazo](https://i.gyazo.com/f34cb1bd09ae16c0f4311cc9f41b8298.png)](https://gyazo.com/f34cb1bd09ae16c0f4311cc9f41b8298)
+
 **Colors:**
 Los colores principales son el azul y el amarillo. El azul se ha seleccionado por su asociación con la energía, la creatividad y la emoción. Este color refleja nuestra pasión por brindar un servicio excepcional y experiencias emocionantes a nuestros usuarios. El amarillo se utiliza como color principal para el fondo, proporcionando un contraste elegante y una apariencia limpia.
+
+[![Image from Gyazo](https://i.gyazo.com/ee409c3794cbbf58090eaf40d9d33f84.png)](https://gyazo.com/ee409c3794cbbf58090eaf40d9d33f84)
 
 **Spacing:** 
 Hemos establecido niveles de espacio que van desde 8px hasta 96px para garantizar un diseño equilibrado y una experiencia visual agradable.
 
+[![Image from Gyazo](https://i.gyazo.com/e62bd6f082dc683ce6e1851f666a40a8.png)](https://gyazo.com/e62bd6f082dc683ce6e1851f666a40a8)
+
 **Button:**
+
+[![Image from Gyazo](https://i.gyazo.com/70befa2af7f43265dba610b32491b660.png)](https://gyazo.com/70befa2af7f43265dba610b32491b660)
 
 ### Web Style Guidelines
 
 Masticat se desarrollará tanto para plataforma web, por lo tanto, implementaremos un diseño adaptable (Web Responsive Design) que tiene como finalidad mostrar la información de manera óptima en cualquier tipo de dispositivo, garantizando que el contenido se mantenga intacto para mejorar la experiencia del usuario.
+
+[![Image from Gyazo](https://i.gyazo.com/11fa23497a630c9bfec653d1b50e3b49.png)](https://gyazo.com/11fa23497a630c9bfec653d1b50e3b49)
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
@@ -89,10 +101,16 @@ Reconocemos que las palabras clave contenidas en los menús y en los bloques est
 #### Tipos de Etiquetas
 
 - **Etiquetas Contextuales:** Estas etiquetas describen los enlaces en Masticat y son cruciales para conectar diferentes partes de la plataforma. Elegiremos cuidadosamente las palabras para estas etiquetas para evitar ambigüedades y garantizar que los usuarios comprendan el contenido al hacer clic en ellas.
+
+[![Image from Gyazo](https://i.gyazo.com/938fe8bddbf8c71e0fd63096cffc0c84.png)](https://gyazo.com/938fe8bddbf8c71e0fd63096cffc0c84)
   
 - **Etiquetas de Encabezado:** Las etiquetas de encabezado serán utilizadas para indicar la temática y jerarquía de contenido en Masticat. Por ejemplo, en la página de productos, utilizaremos encabezados como "Dispensadores para Hogar" y "Soluciones para Clínicas Veterinarias". Los encabezados ayudan a diferenciar las secciones del contenido y su importancia relativa.
 
+[![Image from Gyazo](https://i.gyazo.com/e1eb4bc08106b3385e2c1b63340c1c47.png)](https://gyazo.com/e1eb4bc08106b3385e2c1b63340c1c47)
+
 - **Etiquetas con Parámetro ALT:** En Masticat, las etiquetas con parámetro ALT se emplearán para proporcionar descripciones alternativas a las imágenes en nuestra plataforma. Por ejemplo, una imagen de nuestro dispensador tendrá una etiqueta ALT como "Dispensador inteligente Masticat con sensor de proximidad y medidor de peso". Estas descripciones son esenciales para la accesibilidad web, permitiendo a usuarios con tecnologías de asistencia comprender el contenido de las imágenes.
+
+[![Image from Gyazo](https://i.gyazo.com/49ae51a786d2750d32f251654fc31b9e.png)](https://gyazo.com/49ae51a786d2750d32f251654fc31b9e)
 
 ### 5.2.3. SEO Tags and Meta Tags
 
@@ -100,6 +118,8 @@ En Masticat, comprendemos la importancia de optimizar nuestras páginas tanto en
 
 - **Title (Título):** 
   El título de una página es clave para captar la atención de los usuarios y mejorar la indexación en los motores de búsqueda. Ejemplo: "Masticat - Alimentación Inteligente para Mascotas".
+
+[![Image from Gyazo](https://i.gyazo.com/0bd167e567219198a7cbf7fb42bc9dff.png)](https://gyazo.com/0bd167e567219198a7cbf7fb42bc9dff)
   
 - **Meta Tags de Descripción (Meta Description):** 
   Las descripciones serán breves y atractivas, destacando los beneficios de Masticat. Ejemplo: "Descubre cómo Masticat mejora la alimentación de tu mascota con un dispensador inteligente y monitoreo desde cualquier lugar".
@@ -127,6 +147,8 @@ Ofrecemos a nuestros usuarios diversas opciones de búsqueda para personalizar s
 
 Esto permite a los usuarios filtrar la información que más les interesa y acceder de manera rápida a los datos necesarios para el cuidado de sus mascotas.
 
+[![Image from Gyazo](https://i.gyazo.com/f178e382475841ed12a391ee65275490.png)](https://gyazo.com/f178e382475841ed12a391ee65275490)
+
 ### 5.2.5. Navigation Systems
 
 En Masticat, hemos diseñado un sistema de navegación intuitivo y sencillo que guía a los usuarios a través de nuestra Landing Page y la aplicación móvil/web, permitiéndoles interactuar de manera eficiente con el dispensador inteligente y las demás funcionalidades del producto. A continuación, explicamos cómo los usuarios podrán navegar por nuestro sistema:
@@ -142,10 +164,15 @@ Hemos implementado una barra de navegación en la parte superior de la plataform
 
 Nuestro sistema de navegación en Masticat está diseñado para garantizar que los usuarios puedan alcanzar sus metas fácilmente, ya sea monitorear la alimentación de su mascota, ajustar las configuraciones del dispensador, o consultar reportes detallados, brindándoles una experiencia eficiente y satisfactoria.
 
+[![Image from Gyazo](https://i.gyazo.com/f178e382475841ed12a391ee65275490.png)](https://gyazo.com/f178e382475841ed12a391ee65275490)
+
 ## 5.3. Landing Page UI Design
 
 ### 5.3.1. Landing Page Wireframe
 Hemos creado una representación inicial en forma de bosquejo de baja fidelidad para la página de inicio de Masticat:
 
+[![Image from Gyazo](https://i.gyazo.com/33db07c65e8dd351a5583165f3a26991.png)](https://gyazo.com/33db07c65e8dd351a5583165f3a26991)
+
 ### 5.3.2. Landing Page Mock-up
 El Landing Page se desarrolló utilizando un prototipo de fidelidad intermedia en forma de Mock Up. A continuación, te presentamos una vista previa de nuestra propuesta:
+
