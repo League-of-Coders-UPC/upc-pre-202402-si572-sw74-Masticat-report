@@ -178,3 +178,23 @@ El Landing Page se desarrolló utilizando un prototipo de fidelidad intermedia e
 
 [![Image from Gyazo](https://i.gyazo.com/f6fd623d5ae366a14e32d70c3765f15a.png)](https://gyazo.com/f6fd623d5ae366a14e32d70c3765f15a)
 
+## 5.4. Applications UX/UI Design.
+
+### 5.4.1. Applications Wireframes.
+
+### 5.4.2. Applications Wireflow Diagrams.
+
+### 5.4.2. Application Mock-ups.
+
+
+
+### 5.4.3. Applications User Flow Diagrams.
+
+## 5.5. Application Prototyping.
+![Captura de pantalla 2024-09-26 161804](https://github.com/user-attachments/assets/5434167e-acd2-4319-a0cc-22fdd3f2803d)
+![Captura de pantalla 2024-09-26 161823](https://github.com/user-attachments/assets/c2691610-820e-409f-b3c7-c3421897e7ae)
+![Captura de pantalla 2024-09-26 161729](https://github.com/user-attachments/assets/6ae9bb92-8d37-42ad-9662-bcebcb922f14)
+![Captura de pantalla 2024-09-26 161912](https://github.com/user-attachments/assets/b0379efe-f0b9-4f63-b8c7-9565471a4483)
+![Captura de pantalla 2024-09-26 161934](https://github.com/user-attachments/assets/ded126d0-7530-46be-8e1d-387cb41f040f)
+![Captura de pantalla 2024-09-26 161947](https://github.com/user-attachments/assets/58e35a91-47da-4869-8274-aa87522d9cde)
+![Captura de pantalla 2024-09-26 162015](https://github.com/user-attachments/assets/9069edb2-e1ad-4177-99ef-ebb6e61504c0)
