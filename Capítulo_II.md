@@ -316,7 +316,63 @@ Mirelia es una joven de 21 años, soltera que reside en Rosario, Argentina. Es v
 
 2\.2.3. Análisis de entrevistas.
 
+Segmento Doméstico
+Basado en las 3 entrevistas realizadas al segmento doméstico, se identificaron las siguientes características:
+Características Objetivas:
 
+Edad: El 100% de los entrevistados son jóvenes adultos entre 20 y 24 años.
+Ubicación: El 66.67% reside en San Juan de Lurigancho, mientras que el 33.33% vive en Miraflores.
+Estado Civil: El 66.67% es soltero, mientras que el 33.33% está casado.
+Ocupación: El 66.67% son estudiantes universitarios, mientras que el 33.33% es profesional (abogada).
+Dispositivos utilizados: El 100% usa celular y computadora/laptop en su día a día.
+
+Preferencias digitales: El 100% menciona el uso de redes sociales como canal digital preferido.
+Motivaciones y frustraciones en la alimentación de mascotas:
+
+El 66.67% menciona la frustración de no poder alimentar a su mascota a tiempo cuando no están en casa.
+El 33.33% expresa interés en monitorizar y automatizar la alimentación de su mascota.
+
+
+Uso de tecnología para mascotas:
+
+El 66.67% no ha usado dispositivos inteligentes para el cuidado de mascotas.
+El 33.33% ha tenido experiencias tanto positivas como negativas con productos tecnológicos para mascotas.
+
+
+Factores de decisión de compra:
+
+El 66.67% menciona las recomendaciones (ya sea de familiares o reseñas) como factor influyente en sus decisiones de compra.
+El 33.33% considera la facilidad de uso como un factor importante.
+
+
+
+Segmento Veterinario
+Basado en las 3 entrevistas realizadas al segmento veterinario, se identificaron las siguientes características:
+Características Objetivas:
+
+Edad: El 100% de los entrevistados son jóvenes adultos entre 21 y 23 años.
+Ubicación: Diversa, incluyendo San Juan de Lurigancho, Callao y Rosario (Argentina).
+Estado Civil: El 100% es soltero.
+Rol: El 66.67% trabaja directamente en una veterinaria o tienda de productos para mascotas, mientras que el 33.33% realizó prácticas en una veterinaria.
+Dispositivos utilizados: El 100% usa celular y computadora/laptop en su día a día.
+
+Preferencias digitales: El 100% menciona el uso de redes sociales como canal digital preferido.
+Desafíos en la alimentación de mascotas:
+
+El 66.67% menciona la dificultad de alimentar a múltiples mascotas simultáneamente.
+El 33.33% expresa preocupación por conocer la composición de la comida para mascotas.
+
+
+Percepción sobre la tecnología en veterinarias:
+
+El 100% considera que la tecnología puede mejorar la eficiencia en la alimentación de mascotas en veterinarias.
+El 66.67% menciona la importancia de que un dispensador inteligente pueda reconocer la raza y las necesidades específicas de cada mascota.
+
+
+Volumen de atención:
+
+El 66.67% atiende entre 1 y 5 mascotas por día.
+El 33.33% atiende un mínimo de 20 mascotas por día.
 
 2\.3. Needfinding.
 
