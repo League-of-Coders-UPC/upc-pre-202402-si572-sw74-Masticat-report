@@ -181,12 +181,11 @@ El Landing Page se desarrolló utilizando un prototipo de fidelidad intermedia e
 ## 5.4. Applications UX/UI Design.
 
 ### 5.4.1. Applications Wireframes.
-![image](https://github.com/user-attachments/assets/361549dc-14c1-470c-8d9a-37efaa181646)
-![image](https://github.com/user-attachments/assets/e26453ac-b153-4c04-8f97-0f40558b7663)
-![image](https://github.com/user-attachments/assets/a50ab3b3-67c4-45f2-9b8c-f1d2ff615105)
-![image](https://github.com/user-attachments/assets/3553e07d-5ba9-455a-962f-c9631d8c0130)
-![image](https://github.com/user-attachments/assets/75cce9c3-788f-45cc-a3e2-06c50a20b26c)
-![image](https://github.com/user-attachments/assets/a26bc778-5d29-4306-a4f2-8c3bfdae8fed)
+Los wireframes son fundamentales en el proceso de diseño de nuestras aplicaciones, ya que permiten estructurar la interfaz y la navegación antes de iniciar el desarrollo. En nuestro proyecto, hemos empleado 'Figma' para elaborar los wireframes de forma colaborativa y eficiente.
+A continuación, presentamos los wireframes de nuestra aplicación móvil.
+
+![image](https://github.com/user-attachments/assets/ce8cc71a-01cd-43dc-b8fa-f124b4654eed)
+![image](https://github.com/user-attachments/assets/f8e9ebc0-dc8e-44d0-aeba-e850045daa06)
 
 ### 5.4.2. Applications Wireflow Diagrams.
 
@@ -197,10 +196,4 @@ El Landing Page se desarrolló utilizando un prototipo de fidelidad intermedia e
 ### 5.4.3. Applications User Flow Diagrams.
 
 ## 5.5. Application Prototyping.
-![Captura de pantalla 2024-09-26 161804](https://github.com/user-attachments/assets/5434167e-acd2-4319-a0cc-22fdd3f2803d)
-![Captura de pantalla 2024-09-26 161823](https://github.com/user-attachments/assets/c2691610-820e-409f-b3c7-c3421897e7ae)
-![Captura de pantalla 2024-09-26 161729](https://github.com/user-attachments/assets/6ae9bb92-8d37-42ad-9662-bcebcb922f14)
-![Captura de pantalla 2024-09-26 161912](https://github.com/user-attachments/assets/b0379efe-f0b9-4f63-b8c7-9565471a4483)
-![Captura de pantalla 2024-09-26 161934](https://github.com/user-attachments/assets/ded126d0-7530-46be-8e1d-387cb41f040f)
-![Captura de pantalla 2024-09-26 161947](https://github.com/user-attachments/assets/58e35a91-47da-4869-8274-aa87522d9cde)
-![Captura de pantalla 2024-09-26 162015](https://github.com/user-attachments/assets/9069edb2-e1ad-4177-99ef-ebb6e61504c0)
+
