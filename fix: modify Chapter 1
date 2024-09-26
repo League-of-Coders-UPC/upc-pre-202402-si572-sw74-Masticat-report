@@ -141,7 +141,6 @@ Desarrollar un dispensador inteligente de alimentos para mascotas integrado con 
  + Business Assumptions:
     + Creemos que los propietarios de mascotas y las clínicas veterinarias necesitan una solución tecnológica para gestionar mejor la alimentación de los animales.
     
-
    + Estas necesidades se pueden resolver mediante un dispensador de comida inteligente que integre sensores IoT, dispensación automática de comida, identificación de mascotas, monitoreo en tiempo real y análisis de hábitos alimenticios.
 
    + Nuestros clientes principales serán hogares con mascotas y clínicas veterinarias que buscan mejorar la precisión en la alimentación.
@@ -164,21 +163,32 @@ Desarrollar un dispensador inteligente de alimentos para mascotas integrado con 
     + ¿Cuándo y cómo se utiliza nuestro producto?<br> El producto se utiliza a diario en el hogar o clínica con la finalidad de programar y monitorear la alimentación de las mascotas a través de una aplicación móvil o web.
     + ¿Qué características son importantes?<br> Las características clave incluyen dispensación automática de comida, identificación de mascotas, monitoreo en tiempo real y análisis de hábitos alimenticios de las mascotas.
     + ¿Cómo debe verse y comportarse nuestro producto?<br> Masticat debe tener una interfaz fácil de usar con una navegación fluida en la aplicación móvil o web. Debe ofrecer un diseño intuitivo y accesible para usuarios de cualquier nivel tecnológico permitiendo un monitoreo eficiente de la alimentación y la condición de la mascota.
+    + 
++ Features:
+    + Dispensador inteligente: Un dispensador de comida automatizado que proporciona alimento cuando la mascota se encuentra cerca.
+    + Monitoreo en tiempo real: Los usuarios pueden supervisar la alimentación de sus mascotas mediante sensores de proximidad y recibir notificaciones en tiempo real a través de una aplicación móvil o web.
+    + Medición de peso de comida: El dispensador mide automáticamente la cantidad de comida dispensada para garantizar que la mascota recibe la cantidad correcta.
+    + Identificación de mascotas: El dispositivo puede identificar a las mascotas individuales mediante microchips, registrando los hábitos alimenticios de cada una.
+    + Aplicación móvil/web: Interfaz para que los usuarios controlen de forma remota la alimentación de sus mascotas, programen horarios de comida y revisen informes detallados.
+    + Plan de suscripción premium: Acceso a funcionalidades avanzadas, como la inclusión de cámaras, control de temperatura y generación de informes detallados para clínicas veterinarias.
+
 #### 1.2.2.3 Lean UX Hyphotesis Statements
-Creemos que al ofrecer a las clínicas veterinarias una plataforma para programar y monitorear la alimentación de los animales en tiempo real, facilitaremos la administración de dietas específicas y reduciremos los errores humanos.
-Sabremos que lo habremos logrado cuando las clínicas que utilicen Masticat reporten una reducción del 50% en los errores relacionados con la administración de la comida y una mejora del 25% en la satisfacción del cliente.
 
-Creemos que al integrar dispositivos IoT como sensores de proximidad, balanzas y microchips, en el dispensador de comida Masticat, mejoraremos la precisión en la dispensación de alimentos y reduciremos el desperdicio de comida.
-Sabremos que esto es cierto cuando los usuarios informen una reducción del 30% en el desperdicio de comida y un aumento del 20% en la eficiencia del proceso de alimentación.
+**Creemos que** al ofrecer un dispensador de comida inteligente **para** mascotas, los dueños podrán automatizar el proceso de alimentación, lo que garantizará que sus mascotas reciban la cantidad adecuada de comida a tiempo, sin intervención manual.
+**Sabremos que esto es cierto cuando** al menos el 40% de los usuarios reporten una mejora en la puntualidad y regularidad de la alimentación de sus mascotas después de usar Masticat durante 4 semanas.
 
-Creemos que al permitir el monitoreo remoto de la alimentación de las mascotas a través de una aplicación móvil y web, ofreceremos a los dueños de mascotas una experiencia más flexible y personalizada.
-Sabremos que esto es cierto cuando registremos un aumento del 25% en el uso de las funcionalidades en la aplicación y una mejora del 20% en la satisfacción del usuario.
+**Creemos que** al integrar monitoreo en tiempo real y notificaciones automáticas en la aplicación de Masticat, los dueños de mascotas tendrán un mayor control sobre la alimentación de sus mascotas y podrán responder de inmediato a cualquier problema de alimentación.
+**Sabremos que esto es cierto cuando** al menos el 30% de los usuarios informen que las notificaciones en tiempo real les ayudaron a evitar problemas como el sobrealimentado o la falta de comida en más del 80% de las ocasiones.
 
-Creemos que al integrar características premium como cámaras y control de temperatura en Masticat, aumentaremos el valor percibido del producto y la disposición de los usuarios a adquirir versiones premium.
-Sabremos que esto es cierto cuando veamos un aumento del 30% en las ventas de las versiones premium de Masticat y un crecimiento del 20% en las suscripciones a los servicios avanzados.
+**Creemos que** al proporcionar un sistema automatizado de alimentación, Masticat reducirá los errores humanos en la administración de dietas en clínicas veterinarias y permitirá un mejor seguimiento de los hábitos alimenticios de los animales.
+**Sabremos que lo habremos logrado cuando** las clínicas veterinarias que usen Masticat reporten una reducción del 50% en los errores relacionados con la administración de comida y un aumento del 30% en la eficiencia operativa en los primeros 3 meses de uso.
 
-Creemos que al proporcionar a los dueños de mascotas y clínicas veterinarias un dispensador de comida inteligente que incluya sensores IoT, aumentaremos la eficiencia en la gestión de la alimentación de las mascotas.
-Sabremos que es cierto cuando observemos un aumento del 40% en la adopción de Masticat en hogares y clínicas, y cuando los usuarios reporten una mejora del 30% en la comodidad y precisión de la alimentación de sus mascotas
+**Creemos que** al integrar sensores IoT que midan el peso exacto de la comida dispensada, Masticat reducirá el desperdicio de comida al proporcionar la cantidad justa según el tamaño y las necesidades de la mascota.
+**Sabremos que esto es cierto cuando** los usuarios informen una reducción del 30% en el desperdicio de comida después de usar Masticat durante 2 meses.
+
+**Creemos que** al ofrecer características premium como cámaras **para** monitoreo remoto y control de temperatura para alimentos especiales, más usuarios estarán dispuestos a pagar por la suscripción premium de Masticat.
+**Sabremos que esto es cierto cuando** el 20% de los usuarios que prueben las funciones premium durante un periodo de 1 mes decidan suscribirse a un plan premium de Masticat.
+
 
 #### 1.2.2.4 Lean UX Canvas
 
@@ -214,20 +224,20 @@ Nuestros usuarios son los dueños de mascotas que buscan simplificar el proceso 
 
 * **Hypothesis:**
 
-Creemos que al ofrecer a las clínicas veterinarias una plataforma para monitorear la alimentación de los animales en tiempo real, facilitaremos la administración de dietas específicas y reduciremos los errores humanos.
-Sabremos que lo habremos logrado cuando las clínicas que utilicen Masticat reporten una reducción del 50% en los errores relacionados con la administración de la comida y una mejora del 25% en la satisfacción del cliente.
+**Creemos que** al ofrecer un dispensador de comida inteligente **para** mascotas, los dueños podrán automatizar el proceso de alimentación, lo que garantizará que sus mascotas reciban la cantidad adecuada de comida a tiempo, sin intervención manual.
+**Sabremos que esto es cierto cuando** al menos el 40% de los usuarios reporten una mejora en la puntualidad y regularidad de la alimentación de sus mascotas después de usar Masticat durante 4 semanas.
 
-Creemos que al integrar dispositivos IoT como sensores de proximidad, balanzas y microchips, en el dispensador de comida Masticat, mejoraremos la precisión en la dispensación de alimentos y reduciremos el desperdicio de comida.
-Sabremos que esto es cierto cuando los usuarios informen una reducción del 30% en el desperdicio de comida y un aumento del 20% en la eficiencia del proceso de alimentación.
+**Creemos que** al integrar monitoreo en tiempo real y notificaciones automáticas en la aplicación de Masticat, los dueños de mascotas tendrán un mayor control sobre la alimentación de sus mascotas y podrán responder de inmediato a cualquier problema de alimentación.
+**Sabremos que esto es cierto cuando** al menos el 30% de los usuarios informen que las notificaciones en tiempo real les ayudaron a evitar problemas como el sobrealimentado o la falta de comida en más del 80% de las ocasiones.
 
-Creemos que al permitir el monitoreo remoto de la alimentación de las mascotas a través de una aplicación móvil y web, ofreceremos a los dueños de mascotas una experiencia más flexible y personalizada.
-Sabremos que esto es cierto cuando registremos un aumento del 25% en el uso de las funcionalidades en la aplicación y una mejora del 20% en la satisfacción del usuario.
+**Creemos que** al proporcionar un sistema automatizado de alimentación, Masticat reducirá los errores humanos en la administración de dietas en clínicas veterinarias y permitirá un mejor seguimiento de los hábitos alimenticios de los animales.
+**Sabremos que lo habremos logrado cuando** las clínicas veterinarias que usen Masticat reporten una reducción del 50% en los errores relacionados con la administración de comida y un aumento del 30% en la eficiencia operativa en los primeros 3 meses de uso.
 
-Creemos que al integrar características premium como cámaras y control de temperatura en Masticat, aumentaremos el valor percibido del producto y la disposición de los usuarios a adquirir versiones premium.
-Sabremos que esto es cierto cuando veamos un aumento del 30% en las ventas de las versiones premium de Masticat y un crecimiento del 20% en las suscripciones a los servicios avanzados.
+**Creemos que** al integrar sensores IoT que midan el peso exacto de la comida dispensada, Masticat reducirá el desperdicio de comida al proporcionar la cantidad justa según el tamaño y las necesidades de la mascota.
+**Sabremos que esto es cierto cuando** los usuarios informen una reducción del 30% en el desperdicio de comida después de usar Masticat durante 2 meses.
 
-Creemos que al proporcionar a los dueños de mascotas y clínicas veterinarias un dispensador de comida inteligente que incluya sensores IoT, aumentaremos la eficiencia en la gestión de la alimentación de las mascotas.
-Sabremos que es cierto cuando observemos un aumento del 40% en la adopción de Masticat en hogares y clínicas, y cuando los usuarios reporten una mejora del 30% en la comodidad y precisión de la alimentación de sus mascotas.
+**Creemos que** al ofrecer características premium como cámaras **para** monitoreo remoto y control de temperatura para alimentos especiales, más usuarios estarán dispuestos a pagar por la suscripción premium de Masticat.
+**Sabremos que esto es cierto cuando** el 20% de los usuarios que prueben las funciones premium durante un periodo de 1 mes decidan suscribirse a un plan premium de Masticat.
 
 
 * **What is the most important thing we need to learn first?**
