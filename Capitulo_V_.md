@@ -176,3 +176,5 @@ Hemos creado una representación inicial en forma de bosquejo de baja fidelidad 
 ### 5.3.2. Landing Page Mock-up
 El Landing Page se desarrolló utilizando un prototipo de fidelidad intermedia en forma de Mock Up. A continuación, te presentamos una vista previa de nuestra propuesta:
 
+[![Image from Gyazo](https://i.gyazo.com/f6fd623d5ae366a14e32d70c3765f15a.png)](https://gyazo.com/f6fd623d5ae366a14e32d70c3765f15a)
+
