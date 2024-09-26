@@ -262,529 +262,572 @@ Premium Subscription & Features
 
 ![]()
 
-# 4.2 Bounded Context:
+# Bounded Contexts
 
-## 4.2.1 Profile Bounded Context
+## 4.2. Profile Bounded Context
 
-### 4.2.1.1 Domain Layer
+### 4.2.1. Domain Layer
 
 #### Entities
 
-- **Usuario**
-  - Atributos: Id, Nombre, Email, etc.
-  - Métodos: Crear(), Actualizar(), Eliminar(), etc.
-- **Mascota**
-  - Atributos: Id, Nombre, Microchip, etc.
-  - Métodos: Registrar(), Actualizar(), Eliminar(), etc.
-- **Preferencias**
-  - Atributos: Id, UsuarioId, Preferencia, etc.
-  - Métodos: Guardar(), Cargar(), Eliminar(), etc.
+- User
+  - **Attributes:** Id, Name, Email, PhoneNumber, Address, DateOfBirth
+  - **Methods:** Create(), Update(), Delete(), ChangeEmail(), UpdatePassword(), AddPet(), RemovePet(), UpdatePreferences(), GetProfile()
+  - **Description:** Represents a user of the system with their personal information and related actions.
+
+- Pet
+  - **Attributes:** Id, Name, Species, Breed, DateOfBirth, Weight, Microchip, OwnerId
+  - **Methods:** Register(), Update(), Delete(), UpdateWeight(), UpdateMicrochip(), TransferOwner(), GetMedicalHistory(), ScheduleVetAppointment()
+  - **Description:** Represents a pet registered in the system with its characteristics and associated actions.
+
+- Preferences
+  - **Attributes:** Id, UserId, NotificationSettings, LanguagePreference, ThemePreference
+  - **Methods:** Save(), Load(), Delete(), UpdateNotificationSettings(), ChangeLanguage(), ChangeTheme(), EnableFeature(), DisableFeature()
+  - **Description:** Stores user preferences, including notification settings and customization.
 
 #### Aggregates
-Usuario y Mascota pueden formar un agregado si la relación es fuerte.
+
+User and Pet form an aggregate, as there is a strong relationship between them.
 
 #### Domain Services
-Servicios para gestionar relaciones entre Usuario y Mascota.
+
+Services to manage complex relationships between User and Pet, such as pet transfer between users.
 
 #### Repositories
-- IUsuarioRepository
-- IMascotaRepository
 
-### 4.2.1.2 Interface Layer
+IUserRepository, IPetRepository, IPreferencesRepository
+
+### 4.2.2. Interface Layer
 
 #### Controllers
-- UsuarioController: Gestiona operaciones CRUD para usuarios.
-- MascotaController: Gestiona operaciones CRUD para mascotas.
-- PreferenciasController: Gestiona preferencias de usuario.
 
-### 4.2.1.2 Application Layer
+- UserController: Manages CRUD operations for users and their profiles.
+- PetController: Manages CRUD operations for pets and their medical records.
+- PreferencesController: Manages user preferences and application customization.
+
+### 4.2.3. Application Layer
 
 #### Command Handlers
-- CreateUsuarioCommandHandler
-- UpdateMascotaCommandHandler
+
+- CreateUserCommandHandler
+- UpdatePetCommandHandler
+- UpdatePreferencesCommandHandler
 
 #### Event Handlers
-- UsuarioCreatedEventHandler
-- MascotaUpdatedEventHandler
 
-### 4.2.1.3 Infrastructure Layer
+- UserCreatedEventHandler
+- PetUpdatedEventHandler
+- PreferencesChangedEventHandler
 
-#### Implementaciones de Repositories
-- UsuarioRepository: Implementación de IUsuarioRepository.
-- MascotaRepository: Implementación de IMascotaRepository.
+### 4.2.4. Infrastructure Layer
 
-#### Servicios Externos
-Conexión a bases de datos, APIs externas para gestión de perfiles, etc.
+#### Repository Implementations
 
-### 4.2.1.4 Bounded Context Software Architecture Component Level Diagrams
+- UserRepository: Implementation of IUserRepository.
+- PetRepository: Implementation of IPetRepository.
+- PreferencesRepository: Implementation of IPreferencesRepository.
 
-#### Componentes
-- UsuarioService
-- MascotaService
-- PreferenciasService
+#### External Services
 
-[![Image from Gyazo](https://i.gyazo.com/f2ff03a1578e31ba0aff7e627093d80e.png)](https://gyazo.com/f2ff03a1578e31ba0aff7e627093d80e)
+Connections to databases, external APIs for profile management, authentication services, etc.
 
-###  4.2.1.5 Bounded Context Software Architecture Code Level Diagrams
+### 4.2.6. Bounded Context Software Architecture Component Level Diagrams
 
-####  4.2.1.6 Bounded Context Domain Layer Class Diagrams
+[![Image from Gyazo](https://i.gyazo.com/e53c5b8a1596de5939a346f8479de07d.png)](https://gyazo.com/e53c5b8a1596de5939a346f8479de07d)
 
-[![Image from Gyazo](https://i.gyazo.com/0b2ac6a0943876b5074af96cf7a8e1f4.png)](https://gyazo.com/0b2ac6a0943876b5074af96cf7a8e1f4)
+**Description of Component Diagram:** El diagrama de componentes para el Contexto Delimitado de Perfil ilustra la estructura de alto nivel del sistema. Muestra los principales servicios (UserService, PetService, PreferencesService) interactuando con sus respectivos repositorios. Estos servicios se exponen a través de controladores API, que manejan las solicitudes entrantes. El diagrama también representa la capa de aplicación con manejadores de comandos y eventos, mostrando la arquitectura orientada a eventos del sistema.
 
-####  4.2.1.7 Bounded Context Database Design Diagram
+### 4.2.7. Bounded Context Software Architecture Code Level Diagrams
 
-[![Image from Gyazo](https://i.gyazo.com/0b2ac6a0943876b5074af96cf7a8e1f4.png)](https://gyazo.com/0b2ac6a0943876b5074af96cf7a8e1f4)
+#### 4.2.7.1. Bounded Context Domain Layer Class Diagrams
+
+[![Image from Gyazo](https://i.gyazo.com/e47d057badfcf148ab88567a9c3f7fbc.png)](https://gyazo.com/e47d057badfcf148ab88567a9c3f7fbc)
+
+**Description of Class Diagram:** El diagrama de clases para el Contexto Delimitado de Perfil presenta las entidades principales del dominio y sus relaciones. Muestra la clase User como entidad central, con asociaciones a Pet (uno a muchos) y Preferences (uno a uno). La clase UserProfile representa una vista consolidada de la información del usuario. Cada clase se detalla con sus atributos y métodos, ilustrando claramente la estructura y el comportamiento del modelo de dominio.
+
+#### 4.2.7.2. Bounded Context Database Design Diagram
+
+[![Image from Gyazo](https://i.gyazo.com/f4e8678592d74afe674bd8dddbfffe24.png)](https://gyazo.com/f4e8678592d74afe674bd8dddbfffe24)
+
+**Description of Database Diagram:** El diagrama de base de datos para el Contexto Delimitado de Perfil describe la estructura de datos que soporta el modelo de dominio. Incluye tablas para Users, Pets, Preferences y UserProfiles, con sus respectivos campos y relaciones claramente definidas. El diagrama muestra relaciones de clave foránea, indicando cómo se vinculan los datos entre tablas (por ejemplo, Pets haciendo referencia a Users mediante OwnerId).
 
 ## 2. IAM (Identity and Access Management) Bounded Context
 
-### 4.2.2.1 Domain Layer
+### 4.2.1. Domain Layer
 
 #### Entities
 
-- **Credenciales**
-  - Atributos: Id, UsuarioId, ContraseñaHash, etc.
-  - Métodos: Validar(), CambiarContraseña(), etc.
-- **Roles**
-  - Atributos: Id, Nombre, Descripción, etc.
-  - Métodos: Asignar(), Eliminar(), etc.
-- **Permisos**
-  - Atributos: Id, RolId, Recurso, etc.
-  - Métodos: Asignar(), Revocar(), etc.
+- Credentials
+  - **Attributes:** Id, UserId, PasswordHash
+  - **Methods:** Validate(), ChangePassword()
+  - **Description:** Represents user authentication credentials.
 
-#### Value Objects
-Información de credenciales y permisos.
+- Role
+  - **Attributes:** Id, Name, Description
+  - **Methods:** Assign(), Remove()
+  - **Description:** Represents a user role in the system.
+
+- Permission
+  - **Attributes:** Id, RoleId, Resource
+  - **Methods:** Assign(), Revoke()
+  - **Description:** Represents permissions associated with roles.
 
 #### Aggregates
-Credenciales, Roles, y Permisos.
+
+Credentials, Roles, and Permissions form an aggregate.
 
 #### Domain Services
-- AuthenticationService
-- AuthorizationService
+
+Services for managing complex relationships between Credentials, Roles, and Permissions.
 
 #### Repositories
-- ICredencialesRepository
-- IRolesRepository
-- IPermisosRepository
 
-### 4.2.2.2 Interface Layer
+ICredentialsRepository, IRoleRepository, IPermissionRepository
+
+### 4.2.2. Interface Layer
 
 #### Controllers
-- AuthController: Gestión de autenticación.
-- RoleController: Gestión de roles y permisos.
 
-### 4.2.2.3 Application Layer
+- AuthController: Manages authentication operations.
+- RoleController: Manages role and permission operations.
+
+### 4.2.3. Application Layer
 
 #### Command Handlers
+
 - LoginCommandHandler
 - AssignRoleCommandHandler
 
 #### Event Handlers
+
 - UserAuthenticatedEventHandler
 - RoleAssignedEventHandler
 
-### 4.2.2.4 Infrastructure Layer
+### 4.2.4. Infrastructure Layer
 
-#### Implementaciones de Repositories
-- CredencialesRepository
-- RolesRepository
-- PermisosRepository
+#### Repository Implementations
 
-#### Servicios Externos
-Conexiones a sistemas de autenticación, servicios de identidad, etc.
+- CredentialsRepository: Implementation of ICredentialsRepository.
+- RoleRepository: Implementation of IRoleRepository.
+- PermissionRepository: Implementation of IPermissionRepository.
 
-### 4.2.2.5 Bounded Context Software Architecture Component Level Diagrams
+### 4.2.7. Bounded Context Software Architecture Component Level Diagrams
 
-#### Componentes
-- AuthenticationService
-- AuthorizationService
- 
- [![Image from Gyazo](https://i.gyazo.com/4cdcb28e28274072fd5e56287e9e1f52.png)](https://gyazo.com/4cdcb28e28274072fd5e56287e9e1f52)
+[![Image from Gyazo](https://i.gyazo.com/5d3c7a51e45fbf05e65a0bad197b7b46.png)](https://gyazo.com/5d3c7a51e45fbf05e65a0bad197b7b46)
 
-### 4.2.2 Bounded Context Software Architecture Code Level Diagrams
+**Description of Component Diagram:** El Diagrama de Componentes de IAM representa la arquitectura para gestionar la autenticación y autorización de usuarios. Muestra AuthService y RoleService como componentes centrales, interactuando con sus respectivos repositorios. El diagrama incluye controladores API para manejar solicitudes relacionadas con autenticación y roles, así como manejadores de comandos y eventos en la capa de aplicación.
 
-#### 4.2.2.6 Bounded Context Domain Layer Class Diagrams
 
-[![Image from Gyazo](https://i.gyazo.com/40668b834745e4c9685d015b0ec1b323.png)](https://gyazo.com/40668b834745e4c9685d015b0ec1b323)
+### 4.2.6. Bounded Context Software Architecture Code Level Diagrams
 
-#### 4.2.2.7 Bounded Context Database Design Diagram
+#### 4.2.7.1. Bounded Context Domain Layer Class Diagrams
 
-[![Image from Gyazo](https://i.gyazo.com/fcf783eb71a37d0aab9567ffb493eb91.png)](https://gyazo.com/fcf783eb71a37d0aab9567ffb493eb91)
+[![Image from Gyazo](https://i.gyazo.com/5faf9e374a83ed3d9da62a56017dede9.png)](https://gyazo.com/5faf9e374a83ed3d9da62a56017dede9)
+
+**Description of Class Diagram:** El Diagrama de Clases de IAM ilustra las relaciones entre las entidades clave en el dominio de autenticación y autorización. Muestra la clase Credentials vinculada a User, y las clases Role y Permission formando la base del modelo de autorización. El diagrama define claramente los atributos y métodos de cada clase, proporcionando una visión completa del modelo de dominio de IAM.
+
+#### 4.2.7.2. Bounded Context Database Design Diagram
+
+[![Image from Gyazo](https://i.gyazo.com/43bc0dc7c31d65c15ecba691e463f8db.png)](https://gyazo.com/43bc0dc7c31d65c15ecba691e463f8db)
+
+**Description of Database Diagram:** El Diagrama de Base de Datos de IAM presenta la estructura de datos para almacenar información de autenticación y autorización. Incluye tablas para Credentials, Roles y Permissions, con sus relaciones claramente definidas. El diagrama muestra cómo las credenciales de usuario están vinculadas a roles y cómo los roles están asociados con permisos específicos.
 
 ## 3. Subscriptions and Payments Bounded Context
 
-### 4.2.3.1 Domain Layer
+### 4.2.1. Domain Layer
 
 #### Entities
 
-- **PlanDeSuscripcion**
-  - Atributos: Id, Nombre, Precio, etc.
-  - Métodos: Crear(), Actualizar(), etc.
-- **Pago**
-  - Atributos: Id, UsuarioId, Monto, Fecha, etc.
-  - Métodos: Procesar(), Reembolsar(), etc.
-- **Factura**
-  - Atributos: Id, PagoId, Detalles, etc.
-  - Métodos: Emitir(), Cancelar(), etc.
+- SubscriptionPlan
+  - **Attributes:** Id, Name, Price, Duration
+  - **Methods:** Create(), Update(), Delete()
+  - **Description:** Represents a subscription plan available to users.
 
-#### Value Objects
-Información de pago, detalles de factura.
+- Payment
+  - **Attributes:** Id, UserId, Amount, Date, Status
+  - **Methods:** Process(), Refund(), GetStatus()
+  - **Description:** Represents a payment made by a user.
+
+- Invoice
+  - **Attributes:** Id, PaymentId, Details, IssueDate
+  - **Methods:** Generate(), Cancel(), Send()
+  - **Description:** Represents an invoice for a payment.
 
 #### Aggregates
-PlanDeSuscripcion, Pago, Factura.
+
+SubscriptionPlan, Payment, and Invoice form an aggregate.
 
 #### Domain Services
-- SubscriptionService
-- PaymentService
+
+Services for managing complex operations like subscription renewals and payment processing.
 
 #### Repositories
-- IPlanDeSuscripcionRepository
-- IPagoRepository
-- IFacturaRepository
 
-### 4.2.3.2 Interface Layer
+ISubscriptionPlanRepository, IPaymentRepository, IInvoiceRepository
+
+### 4.2.2. Interface Layer
 
 #### Controllers
-- SubscriptionController: Gestión de suscripciones.
-- PaymentController: Gestión de pagos y facturación.
 
-### 4.2.3.3 Application Layer
+- SubscriptionController: Manages subscription-related operations.
+- PaymentController: Manages payment and invoicing operations.
+
+### 4.2.3. Application Layer
 
 #### Command Handlers
+
 - CreateSubscriptionCommandHandler
 - ProcessPaymentCommandHandler
 
 #### Event Handlers
+
 - SubscriptionCreatedEventHandler
 - PaymentProcessedEventHandler
 
-###  4.2.3.4 Infrastructure Layer
+### 4.2.4. Infrastructure Layer
 
-#### Implementaciones de Repositories
-- PlanDeSuscripcionRepository
-- PagoRepository
-- FacturaRepository
+#### Repository Implementations
 
-#### Servicios Externos
-Integración con pasarelas de pago, sistemas de facturación, etc.
+- SubscriptionPlanRepository: Implementation of ISubscriptionPlanRepository.
+- PaymentRepository: Implementation of IPaymentRepository.
+- InvoiceRepository: Implementation of IInvoiceRepository.
 
-###  4.2.3.5 Bounded Context Software Architecture Component Level Diagrams
+### 4.2.6. Bounded Context Software Architecture Component Level Diagrams
 
-#### Componentes
-- SubscriptionService
-- PaymentService
+[![Image from Gyazo](https://i.gyazo.com/dc40968be14718517641f2223dbe66f9.png)](https://gyazo.com/dc40968be14718517641f2223dbe66f9)
 
-  [![Image from Gyazo](https://i.gyazo.com/63cfff9660b5b13ff3aaf4fbed9c0037.png)](https://gyazo.com/63cfff9660b5b13ff3aaf4fbed9c0037)
+**Description of Component Diagram:** El Diagrama de Componentes de Suscripciones y Pagos describe la arquitectura para gestionar las suscripciones de usuarios y el procesamiento de pagos. Representa SubscriptionService y PaymentService como componentes centrales, cada uno con su respectivo repositorio. El diagrama incluye controladores para manejar solicitudes de suscripción y pago, junto con manejadores de comandos y eventos para procesar estas operaciones.
 
-### 4.2.3. Bounded Context Software Architecture Code Level Diagrams
+### 4.2.7. Bounded Context Software Architecture Code Level Diagrams
 
-####  4.2.3.6 Bounded Context Domain Layer Class Diagrams
+#### 4.2.7.1. Bounded Context Domain Layer Class Diagrams
 
-[![Image from Gyazo](https://i.gyazo.com/afa9477d3180a15a9d93c1c88a83d8bd.png)](https://gyazo.com/afa9477d3180a15a9d93c1c88a83d8bd)
+[![Image from Gyazo](https://i.gyazo.com/50c2c7ca98a16537d903233a96fa4319.png)](https://gyazo.com/50c2c7ca98a16537d903233a96fa4319)
 
-#### 4.2.3.7 Bounded Context Database Design Diagram
+**Description of Class Diagram:** El Diagrama de Clases de Suscripciones y Pagos muestra las relaciones entre entidades clave como SubscriptionPlan, Payment e Invoice. Detalla los atributos y métodos de cada clase, proporcionando una imagen clara de cómo se modelan las suscripciones y pagos en el sistema.
 
-[![Image from Gyazo](https://i.gyazo.com/fc0239d35ad93876834ba5ca3b3696b8.png)](https://gyazo.com/fc0239d35ad93876834ba5ca3b3696b8)
+#### 4.2.7.2. Bounded Context Database Design Diagram
+
+[![Image from Gyazo](https://i.gyazo.com/3a444633e935ab1d783f23ffadce65a7.png)](https://gyazo.com/3a444633e935ab1d783f23ffadce65a7)
+
+
+**Description of Database Diagram:** El Diagrama de Base de Datos de Suscripciones y Pagos ilustra la estructura de datos para almacenar información de suscripciones y pagos. Incluye tablas para SubscriptionPlans, Payments e Invoices, con sus relaciones y campos clave claramente definidos. El diagrama muestra cómo los pagos están vinculados a planes de suscripción específicos y cómo se generan las facturas para cada pago.
 
 ## 4. Configuration and Planning Bounded Context
 
-### 4.2.4.1 Domain Layer
+### 4.2.1. Domain Layer
 
 #### Entities
 
-- **ConfiguracionDeDispositivo**
-  - Atributos: Id, DispositivoId, Configuracion, etc.
-  - Métodos: Configurar(), Obtener(), etc.
-- **HorarioDeAlimentacion**
-  - Atributos: Id, MascotaId, Hora, etc.
-  - Métodos: Programar(), Actualizar(), etc.
-- **ConfiguracionDeSensores**
-  - Atributos: Id, SensorId, Configuracion, etc.
-  - Métodos: Configurar(), Leer(), etc.
+- DeviceConfiguration
+  - **Attributes:** Id, DeviceId, Configuration
+  - **Methods:** Configure(), GetConfiguration()
+  - **Description:** Represents the configuration of a device.
 
-#### Value Objects
-Información de configuración.
+- FeedingSchedule
+  - **Attributes:** Id, PetId, Time, Amount
+  - **Methods:** Schedule(), Update(), Cancel()
+  - **Description:** Represents a feeding schedule for a pet.
+
+- SensorConfiguration
+  - **Attributes:** Id, SensorId, Configuration
+  - **Methods:** Configure(), ReadConfiguration()
+  - **Description:** Represents the configuration of a sensor.
 
 #### Aggregates
-ConfiguracionDeDispositivo, HorarioDeAlimentacion, ConfiguracionDeSensores.
+
+DeviceConfiguration, FeedingSchedule, and SensorConfiguration form an aggregate.
 
 #### Domain Services
-- DeviceConfigurationService
-- FeedingScheduleService
+
+Services for managing complex configurations and scheduling operations.
 
 #### Repositories
-- IConfiguracionDeDispositivoRepository
-- IHorarioDeAlimentacionRepository
-- IConfiguracionDeSensoresRepository
 
-### 4.2.4.2 Interface Layer
+IDeviceConfigurationRepository, IFeedingScheduleRepository, ISensorConfigurationRepository
+
+### 4.2.2. Interface Layer
 
 #### Controllers
-- DeviceConfigurationController: Gestión de configuraciones de dispositivos.
-- FeedingScheduleController: Gestión de horarios de alimentación.
-- SensorConfigurationController: Gestión de configuraciones de sensores.
 
-### 4.2.4.3 Application Layer
+- DeviceConfigurationController: Manages device configuration operations.
+- FeedingScheduleController: Manages feeding schedule operations.
+- SensorConfigurationController: Manages sensor configuration operations.
+
+### 4.2.3. Application Layer
 
 #### Command Handlers
+
 - ConfigureDeviceCommandHandler
 - ScheduleFeedingCommandHandler
 
 #### Event Handlers
+
 - DeviceConfiguredEventHandler
 - FeedingScheduledEventHandler
 
-### 4.2.4.4 Infrastructure Layer
+### 4.2.4. Infrastructure Layer
 
-#### Implementaciones de Repositories
-- ConfiguracionDeDispositivoRepository
-- HorarioDeAlimentacionRepository
-- ConfiguracionDeSensoresRepository
+#### Repository Implementations
 
-#### Servicios Externos
-Integración con dispositivos, sistemas de programación, etc.
+- DeviceConfigurationRepository: Implementation of IDeviceConfigurationRepository.
+- FeedingScheduleRepository: Implementation of IFeedingScheduleRepository.
+- SensorConfigurationRepository: Implementation of ISensorConfigurationRepository.
 
-### 4.2.4.5 Bounded Context Software Architecture Component Level Diagrams
+### 4.2.6. Bounded Context Software Architecture Component Level Diagrams
 
-#### Componentes
-- DeviceConfigurationService
-- FeedingScheduleService
+[![Image from Gyazo](https://i.gyazo.com/c37ac755a1741164086038435ce01e35.png)](https://gyazo.com/c37ac755a1741164086038435ce01e35)
 
-[![Image from Gyazo](https://i.gyazo.com/4ed4bc077e969a7c25a1cebc84fd633f.png)](https://gyazo.com/4ed4bc077e969a7c25a1cebc84fd633f)
-
-### 4.2.4. Bounded Context Software Architecture Code Level Diagrams
-
-#### 4.2.4.6 Bounded Context Domain Layer Class Diagrams
-
-[![Image from Gyazo](https://i.gyazo.com/96b3b7525ad75f68412baf5f7c7d6fa3.png)](https://gyazo.com/96b3b7525ad75f68412baf5f7c7d6fa3)
-
-#### 4.2.4.7 Bounded Context Database Design Diagram
-
-[![Image from Gyazo](https://i.gyazo.com/7a987562a205f9fa45d4c079ffadf996.png)](https://gyazo.com/7a987562a205f9fa45d4c079ffadf996)
-
-## 5. Operation Bounded Context
-
-### 4.2.5.1 Domain Layer
-
-#### Entities
-
-- **Dispensado**
-  - Atributos: Id, DispositivoId, Cantidad, Hora, etc.
-  - Métodos: Dispensar(), ObtenerHistorial(), etc.
-- **LecturaDeSensores**
-  - Atributos: Id, SensorId, Valor, Fecha, etc.
-  - Métodos: Leer(), Analizar(), etc.
-- **EstadoDelDispositivo**
-  - Atributos: Id, DispositivoId, Estado, etc.
-  - Métodos: ActualizarEstado(), ObtenerEstado(), etc.
-
-#### Value Objects
-Información de dispensado y estado del dispositivo.
-
-#### Aggregates
-Dispensado, LecturaDeSensores, EstadoDelDispositivo.
-
-#### Domain Services
-- DispensingService
-- SensorReadingService
-
-#### Repositories
-- IDispensadoRepository
-- ILecturaDeSensoresRepository
-- IEstadoDelDispositivoRepository
-
-### 4.2.5.2 Interface Layer
-
-#### Controllers
-- DispensingController: Gestión del dispensado de comida y agua.
-- SensorReadingController: Gestión de lecturas de sensores.
-- DeviceStatusController: Gestión del estado del dispositivo.
-
-### 4.2.5.3 Application Layer
-
-#### Command Handlers
-- DispenseFoodCommandHandler
-- ReadSensorDataCommandHandler
-
-#### Event Handlers
-- FoodDispensedEventHandler
-- SensorDataReadEventHandler
-
-### 4.2.5.4 Infrastructure Layer
-
-#### Implementaciones de Repositories
-- DispensadoRepository
-- LecturaDeSensoresRepository
-- EstadoDelDispositivoRepository
-
-#### Servicios Externos
-Integración con dispositivos de dispensado y sensores, etc.
-
-### 4.2.5.5 Bounded Context Software Architecture Component Level Diagrams
-
-#### Componentes
-- DispensingService
-- SensorReadingService
-  
-[![Image from Gyazo](https://i.gyazo.com/7f641470b464c4f0ec51da2cb5993b80.png)](https://gyazo.com/7f641470b464c4f0ec51da2cb5993b80)
-
-### 4.2.5 Bounded Context Software Architecture Code Level Diagrams
-
-#### 4.2.5.6 Bounded Context Domain Layer Class Diagrams
-
-[![Image from Gyazo](https://i.gyazo.com/4cea9dd883ed38b5c9ead78606becbe6.png)](https://gyazo.com/4cea9dd883ed38b5c9ead78606becbe6)
-
-#### 4.2.5.7 Bounded Context Database Design Diagram
-
-[![Image from Gyazo](https://i.gyazo.com/0dc5e482773c62624805cb1d9697f190.png)](https://gyazo.com/0dc5e482773c62624805cb1d9697f190)
-
-## 6. Service Execution Bounded Context
-
-### 4.2.6.1 Domain Layer
-
-#### Entities
-
-- **AnalisisDeHabitos**
-  - Atributos: Id, MascotaId, Datos, etc.
-  - Métodos: Analizar(), GenerarReporte(), etc.
-- **Reporte**
-  - Atributos: Id, AnalisisId, Contenido, etc.
-  - Métodos: Generar(), Enviar(), etc.
-- **ServicioPremium**
-  - Atributos: Id, UsuarioId, Caracteristica, etc.
-  - Métodos: Activar(), Desactivar(), etc.
-
-#### Value Objects
-Información de análisis, reportes y características premium.
-
-#### Aggregates
-AnalisisDeHabitos, Reporte, ServicioPremium.
-
-#### Domain Services
-- HabitAnalysisService
-- ReportGenerationService
-
-#### Repositories
-- IAnalisisDeHabitosRepository
-- IReporteRepository
-- IServicioPremiumRepository
-
-### 4.2.6.2 Interface Layer
-
-#### Controllers
-- HabitAnalysisController: Gestión del análisis de hábitos.
-- ReportController: Gestión de reportes.
-- PremiumServiceController: Gestión de funcionalidades premium.
-
-### 4.2.6.3 Application Layer
-
-#### Command Handlers
-- AnalyzeHabitsCommandHandler
-- GenerateReportCommandHandler
-
-#### Event Handlers
-- HabitsAnalyzedEventHandler
-- ReportGeneratedEventHandler
-
-### 4.2.6.4 Infrastructure Layer
-
-#### Implementaciones de Repositories
-- AnalisisDeHabitosRepository
-- ReporteRepository
-- ServicioPremiumRepository
-
-#### Servicios Externos
-Integración con servicios de análisis, generación de reportes, etc.
-
-### 4.2.6.5 Bounded Context Software Architecture Component Level Diagrams
-
-#### Componentes
-- HabitAnalysisService
-- ReportGenerationService
-
-  [![Image from Gyazo](https://i.gyazo.com/011ddfa5b0f679f2f4c1cd510ff2016b.png)](https://gyazo.com/011ddfa5b0f679f2f4c1cd510ff2016b)
-
-### 4.2.6 Bounded Context Software Architecture Code Level Diagrams
-
-#### 4.2.6.6 Bounded Context Domain Layer Class Diagrams
-
-[![Image from Gyazo](https://i.gyazo.com/9c5713b9b17a8ed94b7c761a47c16ff5.png)](https://gyazo.com/9c5713b9b17a8ed94b7c761a47c16ff5)
-
-#### 4.2.6.7 Bounded Context Database Design Diagram
-
-[![Image from Gyazo](https://i.gyazo.com/989bcd7b09ca352ea7359ac4464ab9e6.png)](https://gyazo.com/989bcd7b09ca352ea7359ac4464ab9e6)
-
-## 7. Monitoring Bounded Context
-
-### 4.2.7.1 Domain Layer
-
-#### Entities
-
-- **DatosDeUso**
-  - Atributos: Id, UsuarioId, Fecha, Datos, etc.
-  - Métodos: Recopilar(), Analizar(), etc.
-- **Notificacion**
-  - Atributos: Id, UsuarioId, Mensaje, Fecha, etc.
-  - Métodos: Enviar(), Recibir(), etc.
-- **EstadoDeSaludDeLaMascota**
-  - Atributos: Id, MascotaId, Estado, etc.
-  - Métodos: Actualizar(), Consultar(), etc.
-
-#### Value Objects
-Información de uso, notificaciones y estado de salud.
-
-#### Aggregates
-DatosDeUso, Notificacion, EstadoDeSaludDeLaMascota.
-
-#### Domain Services
-- UsageDataService
-- NotificationService
-
-#### Repositories
-- IDatosDeUsoRepository
-- INotificacionRepository
-- IEstadoDeSaludDeLaMascotaRepository
-
-### 4.2.7.2 Interface Layer
-
-#### Controllers
-- UsageDataController: Gestión de datos de uso.
-- NotificationController: Gestión de notificaciones.
-- HealthStatusController: Gestión del estado de salud de las mascotas.
-
-### 4.2.7.3 Application Layer
-
-#### Command Handlers
-- CollectUsageDataCommandHandler
-- SendNotificationCommandHandler
-
-#### Event Handlers
-- UsageDataCollectedEventHandler
-- NotificationSentEventHandler
-
-### 4.2.7.4 Infrastructure Layer
-
-#### Implementaciones de Repositories
-- DatosDeUsoRepository
-- NotificacionRepository
-- EstadoDeSaludDeLaMascotaRepository
-
-#### Servicios Externos
-Integración con sistemas de monitoreo, servicios de notificación, etc.
-
-### 4.2.7.5 Bounded Context Software Architecture Component Level Diagrams
-
-#### Componentes
-- UsageDataService
-- NotificationService
-
-[![Image from Gyazo](https://i.gyazo.com/1a428fcedf93da2947f7ebba71ab7d35.png)](https://gyazo.com/1a428fcedf93da2947f7ebba71ab7d35)
+**Description of Component Diagram:** El Diagrama de Componentes de Configuración y Planificación muestra la arquitectura para gestionar las configuraciones de dispositivos y los horarios de alimentación. Incluye servicios para DeviceConfiguration, FeedingSchedule y SensorConfiguration, cada uno con su correspondiente repositorio. El diagrama también representa controladores y manejadores de comandos/eventos para gestionar estas configuraciones.
 
 ### 4.2.7. Bounded Context Software Architecture Code Level Diagrams
 
-#### 4.2.7.6 Bounded Context Domain Layer Class Diagrams
+#### 4.2.7.1. Bounded Context Domain Layer Class Diagrams
 
-[![Image from Gyazo](https://i.gyazo.com/a81c9e190be71f5042b50abf8b29137e.png)](https://gyazo.com/a81c9e190be71f5042b50abf8b29137e)
+[![Image from Gyazo](https://i.gyazo.com/eb901c80559c13e6a80e050d6ce365f5.png)](https://gyazo.com/eb901c80559c13e6a80e050d6ce365f5)
+
+**Description of Class Diagram:** El Diagrama de Clases de Configuración y Planificación ilustra las relaciones entre entidades como DeviceConfiguration, FeedingSchedule y SensorConfiguration. Detalla los atributos y métodos de cada clase, proporcionando una comprensión clara de cómo se modelan las configuraciones de dispositivos y alimentación en el sistema.
+
+#### 4.2.7.2. Bounded Context Database Design Diagram
+
+[![Image from Gyazo](https://i.gyazo.com/f9f5de9a982cc567237939f64ee6b8a3.png)](https://gyazo.com/f9f5de9a982cc567237939f64ee6b8a3)
+
+**Description of Database Diagram:** El Diagrama de Base de Datos de Configuración y Planificación describe la estructura de datos para almacenar información de configuración y programación. Incluye tablas para DeviceConfigurations, FeedingSchedules y SensorConfigurations, con sus relaciones y campos clave claramente definidos. El diagrama muestra cómo estas configuraciones están vinculadas a dispositivos y mascotas específicos.
+
+## 5. Operation Bounded Context
+
+### Entities
+
+- Dispensing
+  - **Attributes:** Id, DeviceId, Amount, Time
+  - **Methods:** Dispense(), GetHistory()
+  - **Description:** Represents a food or water dispensing action.
+
+- SensorReading
+  - **Attributes:** Id, SensorId, Value, Timestamp
+  - **Methods:** Record(), Analyze()
+  - **Description:** Represents a reading from a sensor.
+
+- DeviceStatus
+  - **Attributes:** Id, DeviceId, Status, LastUpdateTime
+  - **Methods:** UpdateStatus(), GetStatus()
+  - **Description:** Represents the current status of a device.
+
+### Aggregates
+
+Dispensing, SensorReading, and DeviceStatus form an aggregate.
+
+### Domain Services
+
+Services for managing complex operations like data analysis and device monitoring.
+
+### Repositories
+
+IDispensingRepository, ISensorReadingRepository, IDeviceStatusRepository
+
+### 4.2.2. Interface Layer
+
+#### Controllers
+
+- DispensingController: Manages food and water dispensing operations.
+- SensorReadingController: Manages sensor reading operations.
+- DeviceStatusController: Manages device status operations.
+
+### 4.2.3. Application Layer
+
+#### Command Handlers
+
+- DispenseFoodCommandHandler
+- RecordSensorReadingCommandHandler
+
+#### Event Handlers
+
+- FoodDispensedEventHandler
+- SensorReadingRecordedEventHandler
+
+### 4.2.4. Infrastructure Layer
+
+#### Repository Implementations
+
+- DispensingRepository: Implementation of IDispensingRepository.
+- SensorReadingRepository: Implementation of ISensorReadingRepository.
+- DeviceStatusRepository: Implementation of IDeviceStatusRepository.
+
+### 4.2.6. Bounded Context Software Architecture Component Level Diagrams
+
+[![Image from Gyazo](https://i.gyazo.com/116b1d28a611b74dfb9a78560f3204b2.png)](https://gyazo.com/116b1d28a611b74dfb9a78560f3204b2)
+
+**Description of Component Diagram:** El Diagrama de Componentes de Operación ilustra la arquitectura para gestionar las operaciones centrales del sistema IoT de cuidado de mascotas. Muestra servicios para Dispensing, SensorReading y DeviceStatus, cada uno con su respectivo repositorio. El diagrama incluye controladores para manejar solicitudes operativas y manejadores de comandos/eventos para procesar estas operaciones.
+
+### 4.2.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 4.2.7.1. Bounded Context Domain Layer Class Diagrams
+
+[![Image from Gyazo](https://i.gyazo.com/92dc5fce2cbbb5b61523326c962c3051.png)](https://gyazo.com/92dc5fce2cbbb5b61523326c962c3051)
+
+**Description of Class Diagram:** El Diagrama de Clases de Operación representa las relaciones entre entidades operativas clave como Dispensing, SensorReading y DeviceStatus. Detalla los atributos y métodos de cada clase, proporcionando una imagen clara de cómo el sistema modela y gestiona las actividades operativas centrales.
+
+#### 4.2.7.2. Bounded Context Database Design Diagram
+
+[![Image from Gyazo](https://i.gyazo.com/909ef859125b38eeccbff6912735dd4d.png)](https://gyazo.com/909ef859125b38eeccbff6912735dd4d)
+
+**Description of Database Diagram:** El Diagrama de Base de Datos de Operación presenta la estructura de datos para almacenar datos operativos. Incluye tablas para Dispensing, SensorReadings y DeviceStatus, con sus relaciones y campos clave claramente definidos. El diagrama muestra cómo los datos operativos están vinculados a dispositivos específicos y cómo están estructurados para una recuperación y análisis eficientes.
+
+## 6. Service Execution Bounded Context
+
+### Entities
+
+- Dispensing
+  - **Attributes:** Id, DeviceId, Amount, Time
+  - **Methods:** Dispense(), GetHistory()
+  - **Description:** Represents a food or water dispensing action.
+
+- SensorReading
+  - **Attributes:** Id, SensorId, Value, Timestamp
+  - **Methods:** Record(), Analyze()
+  - **Description:** Represents a reading from a sensor.
+
+- DeviceStatus
+  - **Attributes:** Id, DeviceId, Status, LastUpdateTime
+  - **Methods:** UpdateStatus(), GetStatus()
+  - **Description:** Represents the current status of a device.
+
+### Aggregates
+
+Dispensing, SensorReading, and DeviceStatus form an aggregate.
+
+### Domain Services
+
+Services for managing complex operations like data analysis and device monitoring.
+
+### Repositories
+
+IDispensingRepository, ISensorReadingRepository, IDeviceStatusRepository
+
+### 4.2.2. Interface Layer
+
+#### Controllers
+
+- DispensingController: Manages food and water dispensing operations.
+- SensorReadingController: Manages sensor reading operations.
+- DeviceStatusController: Manages device status operations.
+
+### 4.2.3. Application Layer
+
+#### Command Handlers
+
+- DispenseFoodCommandHandler
+- RecordSensorReadingCommandHandler
+
+#### Event Handlers
+
+- FoodDispensedEventHandler
+- SensorReadingRecordedEventHandler
+
+### 4.2.4. Infrastructure Layer
+
+#### Repository Implementations
+
+- DispensingRepository: Implementation of IDispensingRepository.
+- SensorReadingRepository: Implementation of ISensorReadingRepository.
+- DeviceStatusRepository: Implementation of IDeviceStatusRepository.
+
+### 4.2.6. Bounded Context Software Architecture Component Level Diagrams
+
+[![Image from Gyazo](https://i.gyazo.com/3437d9f62aa36e0e4e3c4001aac91a39.png)](https://gyazo.com/3437d9f62aa36e0e4e3c4001aac91a39)
+
+**Description of Component Diagram:** El Diagrama de Componentes de Ejecución de Servicios describe la arquitectura para ejecutar varios servicios en el sistema IoT de cuidado de mascotas. Incluye componentes para gestionar diferentes tipos de servicios, su ejecución y monitoreo. El diagrama muestra cómo estos componentes interactúan con repositorios y cómo se exponen a través de controladores API.
+
+### 4.2.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 4.2.7.1. Bounded Context Domain Layer Class Diagrams
+
+[![Image from Gyazo](https://i.gyazo.com/85f1527391f2eed5ad6f27528e09bc6b.png)](https://gyazo.com/85f1527391f2eed5ad6f27528e09bc6b)
+
+**Description of Class Diagram:** El Diagrama de Clases de Ejecución de Servicios ilustra el modelo de dominio para la ejecución de servicios. Muestra clases que representan diferentes tipos de servicios, registros de ejecución y entidades relacionadas. El diagrama detalla los atributos y métodos de cada clase, proporcionando información sobre cómo se modela y gestiona la ejecución de servicios.
+
+
+#### 4.2.7.2. Bounded Context Database Design Diagram
+
+[![Image from Gyazo](https://i.gyazo.com/a08a466b4181abcbcc4785cdbc46b372.png)](https://gyazo.com/a08a466b4181abcbcc4785cdbc46b372)
+
+**Description of Database Diagram:** El Diagrama de Base de Datos de Ejecución de Servicios presenta la estructura de datos para almacenar datos de ejecución de servicios. Incluye tablas para diferentes tipos de servicios, registros de ejecución e información relacionada. El diagrama muestra cómo los datos de ejecución están vinculados a servicios y dispositivos específicos, y cómo están estructurados para seguimiento y análisis.
+
+## 7. Monitoring Bounded Context
+
+### Entities
+
+- Dispensing
+  - **Attributes:** Id, DeviceId, Amount, Time
+  - **Methods:** Dispense(), GetHistory()
+  - **Description:** Represents a food or water dispensing action.
+
+- SensorReading
+  - **Attributes:** Id, SensorId, Value, Timestamp
+  - **Methods:** Record(), Analyze()
+  - **Description:** Represents a reading from a sensor.
+
+- DeviceStatus
+  - **Attributes:** Id, DeviceId, Status, LastUpdateTime
+  - **Methods:** UpdateStatus(), GetStatus()
+  - **Description:** Represents the current status of a device.
+
+### Aggregates
+
+Dispensing, SensorReading, and DeviceStatus form an aggregate.
+
+### Domain Services
+
+Services for managing complex operations like data analysis and device monitoring.
+
+### Repositories
+
+IDispensingRepository, ISensorReadingRepository, IDeviceStatusRepository
+
+### 4.2.2. Interface Layer
+
+#### Controllers
+
+- DispensingController: Manages food and water dispensing operations.
+- SensorReadingController: Manages sensor reading operations.
+- DeviceStatusController: Manages device status operations.
+
+### 4.2.3. Application Layer
+
+#### Command Handlers
+
+- DispenseFoodCommandHandler
+- RecordSensorReadingCommandHandler
+
+#### Event Handlers
+
+- FoodDispensedEventHandler
+- SensorReadingRecordedEventHandler
+
+### 4.2.4. Infrastructure Layer
+
+#### Repository Implementations
+
+- DispensingRepository: Implementation of IDispensingRepository.
+- SensorReadingRepository: Implementation of ISensorReadingRepository.
+- DeviceStatusRepository: Implementation of IDeviceStatusRepository.
+
+### 4.2.6. Bounded Context Software Architecture Component Level Diagrams
+
+[![Image from Gyazo](https://i.gyazo.com/76306d33966dbe7d1f17723b5e25f30b.png)](https://gyazo.com/76306d33966dbe7d1f17723b5e25f30b)
+
+**Description of Component Diagram:** El Diagrama de Componentes de Monitoreo representa la arquitectura para monitorear el sistema IoT de cuidado de mascotas. Muestra componentes para recopilación de datos, análisis y alertas. El diagrama incluye servicios para procesar diferentes tipos de datos de monitoreo, sus interacciones con repositorios y cómo se exponen a través de controladores API.
+
+### 4.2.7. Bounded Context Software Architecture Code Level Diagrams
+
+#### 4.2.7.1. Bounded Context Domain Layer Class Diagrams
+
+[![Image from Gyazo](https://i.gyazo.com/2b942ad120772eaeb4ccfc12595c564b.png)](https://gyazo.com/2b942ad120772eaeb4ccfc12595c564b)
+
+**Description of Class Diagram:** El Diagrama de Clases de Monitoreo ilustra el modelo de dominio para el monitoreo del sistema. Muestra clases que representan diferentes tipos de datos de monitoreo, alertas y resultados de análisis. El diagrama detalla los atributos y métodos de cada clase, proporcionando una imagen clara de cómo se modelan las actividades de monitoreo en el sistema.
 
 #### 4.2.7.7 Bounded Context Database Design Diagram
 
-[![Image from Gyazo](https://i.gyazo.com/d0b5f10bb02f74169b6551266841e7ad.png)](https://gyazo.com/d0b5f10bb02f74169b6551266841e7ad)
+[![Image from Gyazo](https://i.gyazo.com/c1fb6295df16ff9f935e88a14c241924.png)](https://gyazo.com/c1fb6295df16ff9f935e88a14c241924)
+
+**Description of Database Diagram:** El Diagrama de Base de Datos de Monitoreo describe la estructura de datos para almacenar datos de monitoreo. Incluye tablas para diferentes tipos de registros de monitoreo, alertas y resultados de análisis. El diagrama muestra cómo los datos de monitoreo están vinculados a dispositivos y sensores específicos, y cómo están estructurados para consultas e informes eficientes.
