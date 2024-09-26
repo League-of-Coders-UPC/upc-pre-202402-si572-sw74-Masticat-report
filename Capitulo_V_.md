@@ -189,11 +189,28 @@ A continuación, presentamos los wireframes de nuestra aplicación móvil.
 
 ### 5.4.2. Applications Wireflow Diagrams.
 
-### 5.4.2. Application Mock-ups.
+A continuación, se presentan los wireflows respectivos a nuestros user goals.
 
+User goal 1: Dado a que el usuario desea crear una cuenta, se presentan los pasos que debe seguir el usuario para registrarse en la aplicación.
+
+![image](https://github.com/user-attachments/assets/df419d3a-32bb-439f-976b-4506825e64f9)
+
+User goal 2: Dado a que el usuario desea agregar una mascota, se presentan los pasos que debe seguir para añadir una nueva mascota.
+
+![image](https://github.com/user-attachments/assets/87301bd3-b135-460a-b9ef-7866c6eba31c)
+
+### 5.4.2. Application Mock-ups.
+Los mockups son un componente clave en el diseño de nuestras aplicaciones, ya que nos permiten previsualizar el aspecto y la organización de los elementos antes de iniciar el desarrollo. A continuación, presentamos los mockups de nuestra aplicación móvil.
+
+![image](https://github.com/user-attachments/assets/25179dd0-ba28-4696-a018-4a6fe478e18b)
 
 
 ### 5.4.3. Applications User Flow Diagrams.
+A continuación, mostramos los flujos de usuario que están alineados con nuestros objetivos de usuario.
+
+User Goal 1: El usuario desea editar sus datos.
+
+![image](https://github.com/user-attachments/assets/7e51b37a-0695-49ac-9834-b154985f370a)
 
 ## 5.5. Application Prototyping.
 
