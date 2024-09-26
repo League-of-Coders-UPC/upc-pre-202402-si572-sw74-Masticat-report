@@ -213,4 +213,8 @@ User Goal 1: El usuario desea editar sus datos.
 ![image](https://github.com/user-attachments/assets/7e51b37a-0695-49ac-9834-b154985f370a)
 
 ## 5.5. Application Prototyping.
+A continuación, se presenta el prototipo que se realizó en base a los mockups que se desarrollaron y documentaron en puntos anteriores. 
 
+![image](https://github.com/League-of-Coders-UPC/upc-pre-202402-si572-sw74-Masticat-report/blob/main/Resources/images/proto.png)
+
+Link: https://www.figma.com/proto/S2vRrLTP5DIUlRmpp6znBA/Mock-Up-Masticat?node-id=15-203&node-type=symbol&t=S7NJvhxz6IgRTMcN-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=15%3A203
