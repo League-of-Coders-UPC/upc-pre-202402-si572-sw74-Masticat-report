@@ -222,8 +222,6 @@ Premium Subscription & Features
 
 #### 4.1.1.2. Domain Message Flows Modeling.
 
-![](https://i.gyazo.com/5df3fd81b10ffae91e90589fb9f013c3.png)
-
 #### 4.1.1.3. Bounded Context Canvases.
 
 ![](https://i.gyazo.com/5ae9f6549f020c6d89c68b597056abfe.png)
@@ -250,13 +248,22 @@ Premium Subscription & Features
 
 ![](https://i.gyazo.com/24b0e1c664550483d4a5c072a72ecc78.png)
 
+Este diagrama representa una vista de alto nivel del Sistema Masticat y sus interacciones con los usuarios y sistemas externos. El sistema central gestiona los dispositivos y aplicaciones Masticat y está compuesto por dos tipos de usuarios: los domésticos, que son los usuarios finales, y los empleadores veterinarios, que son los profesionales que utilizan las interfaces del sistema. También se incluyen sistemas externos como Paypal, que maneja el procesamiento de pagos, y AuthZed, que proporciona servicios de autorización escalables.
+
 #### 4.1.3.2. Software Architecture Context Level Diagrams.
 
 ![](https://i.gyazo.com/24b0e1c664550483d4a5c072a72ecc78.png)
 
+Desde una perspectiva de nivel de contexto, este diagrama ilustra los límites del Sistema Masticat y sus interacciones inmediatas. El sistema es responsable de gestionar los dispositivos y aplicaciones Masticat, y tiene dos tipos de usuarios: el usuario doméstico, que interactúa con las interfaces, y el empleador veterinario, que tiene diferentes niveles de acceso. Las dependencias externas incluyen a Paypal, como pasarela de pago, y AuthZed, para servicios de autenticación y autorización.
+Este diagrama de contexto define claramente el alcance del sistema, mostrando sus interfaces principales y dependencias externas sin entrar en complejidades internas, estableciendo un límite claro de lo que está en el alcance del Sistema Masticat y lo que es manejado por servicios externos.
+
 #### 4.1.3.3. Software Architecture Container Level Diagram
 
 ![](https://i.gyazo.com/308ec388e1c55b5f730ecafeb65ae075.png)
+
+El diagrama presenta la arquitectura de contenedores del Sistema Masticat, destacando sus componentes e interacciones. Incluye dos interfaces de usuario: una aplicación móvil y una web, que se conectan a través de un API Gateway central.
+El núcleo del sistema consta de varios microservicios, como Configuración y Planificación, Perfil, Operación, Monitoreo, Gestión de Identidad y Acceso, Ejecución de Servicios, y Suscripciones y Pagos, cada uno con su propia base de datos, siguiendo el principio de segregación de datos. También se integra con componentes externos como la API Edge para la comunicación con dispositivos, AuthZed para autorización, y Paypal para gestión de pagos.
+La arquitectura utiliza un API Gateway para centralizar la gestión de solicitudes, mejorando la seguridad y el monitoreo, y la separación de bases de datos mantiene un bajo acoplamiento entre los componentes. En resumen, el diagrama muestra una arquitectura moderna, diseñada para manejar las complejidades de un sistema distribuido como Masticat, ofreciendo flexibilidad para futuras expansiones.
 
 #### 4.1.3.4. Software Architecture Deployment Diagrams
 
