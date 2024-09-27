@@ -196,12 +196,14 @@ Para la estructura y el diseño de nuestras aplicaciones web, seguiremos la guí
 - **Indentación Consistente**: Usar espacios o tabulaciones de manera uniforme para mejorar la legibilidad.
 - **Uso Semántico de Etiquetas**: Emplear etiquetas HTML de manera que reflejen el contenido, como \<header\>, \<footer\>, \<article\>, y \<section\>, para mejorar la accesibilidad y la SEO.
 - **Clases y IDs Descriptivos**: Nombrar clases y IDs de forma que indiquen claramente su función y estilo, lo que facilitará la comprensión y mantenimiento del código.
+
 **JavaScript**
 Para el desarrollo en JavaScript, adoptaremos la guía de estilo de Airbnb. Esta guía es ampliamente reconocida en la comunidad de desarrollo y establece estándares claros que ayudan a mantener la calidad del código. Algunos puntos destacados incluyen:
 
 - **Uso de const y let**: Preferir const para variables que no cambian y let para aquellas que sí. Evitar el uso de var para evitar confusiones en el alcance.
 - **Funciones de Flecha**: Usar funciones de flecha para mantener un contexto de this claro y conciso.
 - **Manejo de Promesas**: Usar async/await para el manejo de promesas, lo que facilita la lectura del código asíncrono.
+
 **TypeScript y Angular**
 Para proyectos que utilizan TypeScript y Angular, nos adheriremos a la guía de estilo oficial de Angular. Esta guía se centra en la organización del código y la consistencia, lo que es crucial para la escalabilidad de las aplicaciones. Algunos de los puntos clave son:
 
