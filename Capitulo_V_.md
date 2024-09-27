@@ -13,9 +13,9 @@ Hemos elegido llamar a nuestra solución "Masticat" debido a su enfoque en ayuda
 **Typography:**
 Hemos seleccionado cuidadosamente las fuentes "Poppins" y "Satisfy" para transmitir una imagen moderna y legible.
 
-[![Image from Gyazo](https://i.gyazo.com/9383947659daaf8a4cb3360caf3b78f7.png)](https://gyazo.com/9383947659daaf8a4cb3360caf3b78f7)
+[![Image from Gyazo](https://i.gyazo.com/9383947659daaf8a4cb3360caf3b78f7.png)]
 
-[![Image from Gyazo](https://i.gyazo.com/f34cb1bd09ae16c0f4311cc9f41b8298.png)](https://gyazo.com/f34cb1bd09ae16c0f4311cc9f41b8298)
+[![Image from Gyazo](https://i.gyazo.com/f34cb1bd09ae16c0f4311cc9f41b8298.png)]
 
 **Colors:**
 Los colores principales son el azul y el amarillo. El azul se ha seleccionado por su asociación con la energía, la creatividad y la emoción. Este color refleja nuestra pasión por brindar un servicio excepcional y experiencias emocionantes a nuestros usuarios. El amarillo se utiliza como color principal para el fondo, proporcionando un contraste elegante y una apariencia limpia.
