@@ -65,7 +65,7 @@ Cuando la mascota lo necesite.
 * <strong>Where?</strong><br>
 En hogares y clínicas veterinarias.
 * <strong>Who?</strong><br>
-Afecta tanto a las agencias de viajes como a los turistas. Las agencias luchan por comprender y satisfacer las necesidades de los turistas, y los turistas buscan experiencias más personalizadas y seguras.
+Afecta a los dueños de mascotas y a las clínicas veterinarias. Los dueños buscan una solución automatizada para alimentar a sus mascotas, mientras que las clínicas necesitan gestionar la alimentación de múltiples animales de manera eficiente.
 * <strong>Why?</strong><br>
 Para asegurar que las mascotas reciban la cantidad correcta de comida a tiempo sin la necesidad de la constante intervención humana.
 * <strong>How?</strong><br>
