@@ -314,11 +314,19 @@ En esta sección, exploraremos el Sprint Backlog 1, que es fundamental para la p
 Además, se presentará el Sprint en Trello, donde se podrán visualizar las tareas y el progreso del equipo.
 
 ![](https://i.gyazo.com/e2751c0613438b103e9aefd8c751fcaf.png)
-#### 6.2.1.3. Development Evidence for Sprint Review.
 
-|Repository|Branch|Commit Id|Commit Message|Commit Message Body|Commited on (Date)|
-| :- | :- | :- | :- | :- | :- |
-|||||||
+# 6.2.1.3. Development Evidence for Sprint Review
+
+## Commit Details
+
+| Repository | Branch                | Commit ID                              | Commit Message              | Commit Message Body | Committed on  |
+|------------|-----------------------|----------------------------------------|-----------------------------|---------------------|---------------|
+| [Masticat Landing Page](https://github.com/League-of-Coders-UPC/Masticat-LandingPage) | `feature/hero-section` | `adb101f5e2ac5dfb28ba7c8be43aa97cc38e7f97` | feat: add hero section       | -                   | 26/09/2024    |
+| [Masticat Landing Page](https://github.com/League-of-Coders-UPC/Masticat-LandingPage) | `feature/features-section` | `cb90ec4fc3b0f9eee85c68c50de1e37531c38457` | feat: add features section   | -                   | 26/09/2024    |
+| [Masticat Landing Page](https://github.com/League-of-Coders-UPC/Masticat-LandingPage) | `feature/features-section` | `66bcc85b6a3865f4a40f8e163c9613caba3089a3` | feat: add plans section      | -                   | 26/09/2024    |
+| [Masticat Landing Page](https://github.com/League-of-Coders-UPC/Masticat-LandingPage) | `feature/team-section` | `79fea59cf38672fa55c78cd3d05b616a838665f0` | feat: implement team section | -                   | 26/09/2024    |
+| [Masticat Landing Page](https://github.com/League-of-Coders-UPC/Masticat-LandingPage) | `feature/footer`      | `0c6c6903d7f40396bcc9206f702be3cda4983005` | feat: add footer             | -                   | 26/09/2024    |
+
 
 #### 6.2.1.4. Testing Suite Evidence for Sprint Review.
 En este Sprint, no hemos desarrollado tests relacionados a User Stories del Backend Application.
