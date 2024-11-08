@@ -270,6 +270,63 @@ Single Page Application (AWS):
 
 ![](https://i.gyazo.com/4b69c44f02eb89993601c16c2526653a.png)
 
+## 6.2.1.5. Execution Evidence for Sprint Review.
+
+**Landing Page:**
+
+Para este Sprint 2, se completó la implementación del video about the
+product\
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image40.png){width="6.267716535433071in"
+height="3.375in"}
+
+**FrontendApplication:**
+
+Para este Sprint 2, se completó la implementación de los componentes que
+se explicaron en el user story, ademas ya esta deployado\
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image86.png){width="6.267716535433071in"
+height="3.5833333333333335in"}
+
+**MobileApplication:**
+
+Para este Sprint 2, se completó la implementación de los componentes que
+se explicaron en el user story.
+
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image104.png){width="4.65625in"
+height="9.364583333333334in"}
+
+## 6.2.1.6. Services Documentation Evidence for Sprint Review.
+
+## En este Sprint, mostraremos Endpoints que documentar ya que hemos Backend Application
+
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image51.png){width="6.267716535433071in"
+height="2.9166666666666665in"}
+
+## 6.2.1.7. Software Deployment Evidence for Sprint Review.
+
+En este Sprint, se realizaron diversas actividades relacionadas con el
+despliegue de la Landing Page y la Aplicación Web. Estas actividades
+incluyeron la creación de la página a la que pueden acceder los
+visitantes para conocer Masticat y, si lo desean, convertirse en
+usuarios. Por otro lado, se desarrolló la primera versión de la
+Aplicación Web, que actualmente obtiene datos de un fake API. A
+continuación, presentaremos la evidencia de despliegue.\
+\
+LANDING:[[https://league-of-coders-upc.github.io/Masticat-LandingPage/]{.underline}](https://league-of-coders-upc.github.io/Masticat-LandingPage/)
+
+WEB APP:
+[[https://masticat.vercel.app/login]{.underline}](https://masticat.vercel.app/login)
+
+Backend:[[https://swmmwwf2h0.execute-api.us-east-2.amazonaws.com]{.underline}](https://swmmwwf2h0.execute-api.us-east-2.amazonaws.com)
+
+## 6.2.1.8. Team Collaboration Insights during Sprint
+
+En esta parte vemos que todos los integrantes del grupo participaron
+activamente en la implementación de código para el FrontEnd Application.
+
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image118.png){width="6.267716535433071in"
+height="2.736111111111111in"}
+
+
 ## 6.2. Landing Page, Services & Applications Implementation.
 ### 6.2.1. Sprint 1
 En esta sección, registraremos y detallaremos el avance del Sprint 1 en relación con el desarrollo del producto y la colaboración del equipo. Trataremos diversos aspectos importantes, como la planificación del sprint, el backlog correspondiente y la evidencia de desarrollo que se presentará en el Sprint Review.
