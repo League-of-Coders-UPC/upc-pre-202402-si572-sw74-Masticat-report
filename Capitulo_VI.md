@@ -411,3 +411,88 @@ El gráfico nos muestra la cantidad de commits que se han realizado a lo largo d
 Este gráfico evidencia la aplicación del GitFlow en nuestro repositorio y la administración de ramas correctamente realizada.
 
 **Single Page Application:**
+
+
+## 6.2.2. Sprint 2
+
+Aquí se mostrará el progreso del Sprint 2, mostrando la colaboración que
+el equipo tuvo en el desarrollo del producto. Se documentará el Sprint
+Planning 2, el Sprint Backlog 2 y los Sprint Review de Development y
+Testing.
+
+## 6.2.2.1. Sprint Planning 2.
+
++-----------------------------------+-----------------------------------+
+| Sprint \#                         | Sprint 2                          |
++===================================+===================================+
+| **Sprint Planning Background**    |                                   |
++-----------------------------------+-----------------------------------+
+| Date                              | 11/10/2024                        |
++-----------------------------------+-----------------------------------+
+| Time                              | 17:00                             |
++-----------------------------------+-----------------------------------+
+| Location                          | Reunión Virtual en Meet           |
++-----------------------------------+-----------------------------------+
+| Prepared By                       | Josef Cesar Romero Florida        |
++-----------------------------------+-----------------------------------+
+| Sprint 2 Review Summary and       | En el Sprint anterior se concretó |
+| Retrospective Summary             | la primera versión de la Landing  |
+|                                   | Page, así como la implementación  |
+|                                   | de las primeras funcionalidades   |
+|                                   | del Front-End Web App.            |
+|                                   |                                   |
+|                                   | Opiniones de miembros:\           |
+|                                   | \                                 |
+|                                   | Josef Romero: "Pienso que el      |
+|                                   | Sprint 1 fue exitoso aunque       |
+|                                   | desearía que no se nos hubiera    |
+|                                   | pasado por alto lo del idioma     |
+|                                   | inglé en el front."\              |
+|                                   | \                                 |
+|                                   | Jhosaim: "El Sprint 1 tuvo un     |
+|                                   | avance notable respecto a las     |
+|                                   | expectativas que tenía."          |
+|                                   |                                   |
+|                                   | Djalma: "Fue satisfactorio pero   |
+|                                   | con una mejor comunicación        |
+|                                   | hubiera sido más sencillo."\      |
+|                                   | \                                 |
+|                                   | Leonardo: "Todo fue muy bueno con |
+|                                   | el Sprint 1."\                    |
+|                                   | \                                 |
+|                                   | Christian: "Pienso yo que el      |
+|                                   | Sprint 1 cumplió lo que           |
+|                                   | esperábamos además de ayudar a    |
+|                                   | conocer los ritmos de trabajo de  |
+|                                   | los otros miembros."              |
++-----------------------------------+-----------------------------------+
+| Attendees (to planning meeting)   | Christian Zeta, Leonardo          |
+|                                   | Ferreyra, Jhosaim Pocohuanca,     |
+|                                   | Djalma Dioses                     |
++-----------------------------------+-----------------------------------+
+| **Sprint Goal & User Stories**    |                                   |
++-----------------------------------+-----------------------------------+
+| Sprint 2 Goal                     | *Nuestro enfoque está en          |
+|                                   | establecer una arquitectura de    |
+|                                   | backend escalable mientras        |
+|                                   | mejoramos la experiencia          |
+|                                   | multiplataforma de Masticat.*     |
+|                                   |                                   |
+|                                   | *Creemos que esto entrega una     |
+|                                   | base tecnológica robusta y una    |
+|                                   | experiencia fluida tanto en       |
+|                                   | dispositivos móviles como web     |
+|                                   | para los dueños de mascotas.*     |
+|                                   |                                   |
+|                                   | *Esto se confirmará cuando los    |
+|                                   | usuarios puedan acceder a la      |
+|                                   | plataforma a través de diferentes |
+|                                   | dispositivos y realizar           |
+|                                   | operaciones CRUD con sus mascotas |
+|                                   | y perfiles mediante una API.*     |
++-----------------------------------+-----------------------------------+
+| Sprint 2 Velocity                 | 230                               |
++-----------------------------------+-----------------------------------+
+| Sum of Story Points               | 227                               |
++-----------------------------------+-----------------------------------+
+
