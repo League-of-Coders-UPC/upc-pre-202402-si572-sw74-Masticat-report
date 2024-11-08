@@ -496,3 +496,133 @@ Testing.
 | Sum of Story Points               | 227                               |
 +-----------------------------------+-----------------------------------+
 
+# 6.2.2.2. Sprint Backlog 2.
+
+El objetivo de este Sprint 2 fue el de empezar con la codificación del
+Back-End, el Embedded App y el Mobile App, además de continuar con el
+desarrollo del Front-End y la Landing Page. A continuación se muestra
+una captura del Boards de Trello:
+
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image41.png){width="6.267716535433071in"
+height="2.638888888888889in"}
+
+Link:
+[[https://trello.com/invite/b/67130a573e2bc7578091b5ce/ATTI59ada6c5c00fe96a8b541e3a962930d8A7798C53/sprint-backlog-2]{.underline}](https://trello.com/invite/b/67130a573e2bc7578091b5ce/ATTI59ada6c5c00fe96a8b541e3a962930d8A7798C53/sprint-backlog-2)
+
+  --------------------------------------------------------------------------------------------------------------
+  **Sprint                    Sprint 2                                                              
+  \#**                                                                                              
+  ---------- ---------------- ---------- ---------------- ---------------- ------------ ----------- ------------
+  **User                      **Work -                                                              
+  Story**                     Item /                                                                
+                              Task**                                                                
+
+  Id         Title            Id         Title            Description      Estimation   Assigned To Status
+                                                                           (Hours)                  
+
+  US03       Diseñar interfaz TASK06     Crear Mock-Ups   Crear Mock-Ups   21           Josef       In-Process
+             de usuario                  de la interfaz   de la interfaz                            
+                                         web              web                                       
+
+                              TASK07     Añadir al figma  Añadir al figma  2            Jhosaim     To-Do
+                                         en mockup y      en mockup y                               
+                                         wireframe el     wireframe el                              
+                                         recuperar        recuperar                                 
+                                         contraseña       contraseña                                
+
+                              TASK08     Corregir         Corregir         8            Josef       To-Do
+                                         alineaciones del alineaciones del                          
+                                         dashboard e      dashboard e                               
+                                         implementar      implementar                               
+                                         diseño           diseño                                    
+                                         responsivo       responsivo                                
+
+                              TASK09     Cambiar          Cambiar          1            Josef       To-Do
+                                         tipografí­a       tipografí­a en la                          
+                                                          aplicación móvil                          
+
+  US04       Implementar      TASK01     Desplegar la     Desplegar la     3            Jhosaim     To-Do
+             navegación                  aplicación móvil aplicación móvil                          
+             principal                                                                              
+
+                              TASK02     Diseñar y        Diseñar y        5            Josef       In-Process
+                                         desarrollar      desarrollar                               
+                                         encabezado y     encabezado y                              
+                                         navegación       navegación                                
+
+                              TASK03     Implementar      Implementar      3            Jhosaim     To-Do
+                                         switch entre     switch entre                              
+                                         dispositivos     dispositivos                              
+
+  US07       Crear formulario TASK02     Desarrollar UI   Desarrollar UI   3            Jhosaim     In-Process
+             de registro                 de registro en   de registro en                            
+                                         aplicación web   aplicación web                            
+
+  US08       Desarrollar      TASK03     Desarrollar UI   Desarrollar UI   5            Jalma       In-Process
+             interfaz de                 para agregar     para agregar                              
+             agregar mascota             mascota          mascota                                   
+
+  US13       Crear perfil de  TASK01     Implementar      Implementar      8            Leonardo    Done
+             usuario                     vista del perfil vista del perfil                          
+                                         de usuario web   de usuario web                            
+
+                              TASK02     Implementar      Implementar      8            Leonardo    Done
+                                         vista del perfil vista del perfil                          
+                                         de usuario       de usuario                                
+                                         mobile           mobile                                    
+
+                              TASK03     Mejorar navbar y Mejorar navbar y 5            Leonardo    To-Do
+                                         hacer que        hacer que                                 
+                                         aparezca la foto aparezca la foto                          
+                                         del usuario      del usuario                               
+
+  US14       Añadir perfil de TASK01     Añadir perfil de Añadir perfil de 5            Christian   Done
+             mascota                     mascota web      mascota web                               
+
+                              TASK02     Añadir perfil de Añadir perfil de 5            Christian   Done
+                                         mascota mobile   mascota mobile                            
+
+                              TASK03     Crear modelo de  Crear modelo de  3            Leonardo    Done
+                                         datos para       datos para                                
+                                         mascotas         mascotas                                  
+
+                              TASK05     Mejorar Agregar  Mejorar función  3            Christian   To-Do
+                                         nueva mascota    de agregar nueva                          
+                                                          mascota                                   
+
+  US16       Programar        TASK01     Implementar      Implementar      5            Leonardo    To-Do
+             horarios de                 gráfico de       gráfico de                                
+             alimentación                barras           barras para                               
+                                                          visualización de                          
+                                                          datos                                     
+
+  US17       Recibir          TASK01     Implementar      Implementar      1            Christian   To-Do
+             notificaciones              punto rojo       punto rojo en el                          
+             de alimentación             campanita        icono de                                  
+                                                          notificaciones                            
+
+  TS02       Implementar      TASK01     IAM CRUD de      Implementar CRUD 5            Djalma      To-Do
+             microservicio               usuario          de usuario en el                          
+             IAM                                          sistema IAM                               
+
+  TS03       Implementar      TASK01     CRUD de profiles Implementar CRUD 5            Djalma      To-Do
+             microservicio de                             de perfiles                               
+             Perfil                                                                                 
+
+  TS04       Implementar      TASK01     CRUD de          Implementar CRUD 5            Djalma      To-Do
+             microservicio de            subscription     de suscripciones                          
+             Suscripción                                                                            
+
+  TS06       Implementar      TASK01     Lista de         Implementar      5            Josef       To-Do
+             microservicio de            dispositivos     lista de                                  
+             Operación                                    dispositivos                              
+
+  TS07       Implementar      TASK01     CRUD de          Implementar CRUD 5            Josef       To-Do
+             microservicio de            communications   de                                        
+             Servicio                                     comunicaciones                            
+
+  TS08       Implementar      TASK01     CRUD de tracker  Implementar CRUD 5            Christian   To-Do
+             microservicio de                             de seguimiento                            
+             Monitoreo                                                                              
+  --------------------------------------------------------------------------------------------------------------
+
