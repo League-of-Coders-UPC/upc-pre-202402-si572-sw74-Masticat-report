@@ -710,3 +710,85 @@ Link:
                                                                          feature/deviceManager   ee98e5b36a622692b2f18de2329cdf1a953ead0b   implement add     \-          2/11/20024
                                                                                                                                             device component              
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+## 6.3. Validation Interviews
+
+## 6.3.1 Diseño de Entrevistas.
+
+*Preguntas sobre información personal:*
+
+-   ¿Indíqueme su nombre completo por favor?
+
+-   ¿Cuántos años posee?
+
+-   ¿Dónde vive?
+
+-   ¿A qué se dedica?
+
+*Preguntas principales:*
+
+-   ¿Qué opina usted del diseño de la landing page?
+
+-   ¿Por lo que puede apreciar en un primer vistazo le motiva a conocer
+    > más de la aplicación?
+
+-   ¿Considera que la aplicación es fácil de entender?
+
+-   ¿Le resultan claros los mensajes de error como cuando ingresa un
+    > correo no registrado en el login?
+
+-   ¿Qué cambios o mejoras sugiere para la aplicación?
+
+-   ¿Alguna funcionalidad le pareció confusa o poco clara?
+
+## 6.3.2 Registro de Entrevistas
+
+En esta sección se hace un desglose de las entrevistas realizadas por
+cada segmento objetivo.\
+\
+*Segmento doméstico*
+
+Nombre: Andrea\
+Apellido: Huancas\
+Edad: 27\
+Distrito: Miraflores\
+Ocupación: Abogada\
+Captura:
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image45.png){width="6.267716535433071in"
+height="3.0833333333333335in"}\
+Link:
+[[Entrevista_IOT_Leonardo_Ferreyra.mp4]{.underline}](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111363_upc_edu_pe/ER21P7xMjlFEhkJz_gzTS5cB2IsvMZPAXHv5EUAwZ3WYZQ?e=BunUqp&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)\
+Duración: 4:04
+
+Andrea Huancas, una abogada de 27 años, considera que la landing page de
+la aplicación es atractiva, con colores agradables y buena calidad de
+imágenes. Se siente motivada a conocer más sobre la aplicación, la cual
+le parece intuitiva y fácil de navegar. Valora la claridad de los
+mensajes de error, que le ayudan a solucionar problemas. Sugiere añadir
+una sección de preguntas frecuentes para facilitar el acceso a
+información y opina que el proceso de edición de mascotas podría
+simplificarse, eliminando un paso innecesario.
+
+*Segmento veterinaria*
+
+Nombre:Erick\
+Apellido:Alvarez\
+Edad:22\
+Distrito:San Isidro\
+Ocupación:Atencion al cliente\
+Captura:
+
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image38.png){width="6.267716535433071in"
+height="3.5277777777777777in"}\
+Link:[[Video Entrevista Christian
+Zeta.mp4]{.underline}](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202011688_upc_edu_pe/ERjQVKSxirVEtfkAfrqwdWsBKfRh-RjiEUibYchod_aJwQ?e=0SYsZO&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)\
+Duración:4:24\
+Resumen:En esta entrevista el usuario nos comenta que por parte del
+landing page tiene colores agradables y da confianza en poder seguir
+investigando acerca del producto , por parte de la página web nos
+comenta que solo vio una sugerencia en nuestro sidebar mostrar mejores
+diseños ya que ahí estará la función más importante que es acerca de los
+dispositivos
