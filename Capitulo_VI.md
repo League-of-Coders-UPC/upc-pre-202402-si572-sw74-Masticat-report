@@ -626,3 +626,30 @@ Link:
              Monitoreo                                                                              
   --------------------------------------------------------------------------------------------------------------
 
+## 6.2.1.3. Development Evidence for Sprint Review.
+
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Repository                                                             Branch                  Commit Id                                  Commit Message    Commit      Commited on
+                                                                                                                                                              Message     (Date)
+                                                                                                                                                              Body        
+  ---------------------------------------------------------------------- ----------------------- ------------------------------------------ ----------------- ----------- ------------
+  https://github.com/League-of-Coders-UPC/Masticat-FrontendApplication   feature/register        b98227c3d42da6871d21a1011cd8b2db8de06da0   update:register   \-          2/11/20024
+                                                                                                                                            component                     
+                                                                                                                                            validation                    
+                                                                                                                                            implementation                
+
+                                                                         feature/login           23b4976be625da627cdac0eed3040f4a8a7d25d1   update:login      \-          2/11/20024
+                                                                                                                                            component                     
+                                                                                                                                            validation                    
+                                                                                                                                            implementation                
+
+                                                                         feature/Notification    7ae01c291eb960fc0e970163a1618b5d985f2ee5   Update:           \-          2/11/20024
+                                                                                                                                            Notification                  
+                                                                                                                                            Component                     
+
+                                                                         feature/add-pet         ab8a09644f2471aab0942e3a829bbb4f8ee267a7   implement add pet \-          2/11/20024
+                                                                                                                                            component                     
+
+                                                                         feature/deviceManager   ee98e5b36a622692b2f18de2329cdf1a953ead0b   implement add     \-          2/11/20024
+                                                                                                                                            device component              
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
