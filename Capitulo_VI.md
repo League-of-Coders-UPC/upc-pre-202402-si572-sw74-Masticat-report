@@ -470,6 +470,7 @@ Este gráfico evidencia la aplicación del GitFlow en nuestro repositorio y la a
 **Single Page Application:**
 
 
+
 ## 6.2.2. Sprint 2
 
 Aquí se mostrará el progreso del Sprint 2, mostrando la colaboración que
@@ -553,7 +554,7 @@ Testing.
 | Sum of Story Points               | 227                               |
 +-----------------------------------+-----------------------------------+
 
-# 6.2.2.2. Sprint Backlog 2.
+## 6.2.2.2. Sprint Backlog 2.
 
 El objetivo de este Sprint 2 fue el de empezar con la codificación del
 Back-End, el Embedded App y el Mobile App, además de continuar con el
@@ -711,14 +712,69 @@ Link:
                                                                                                                                             device component              
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+## 
 
+## 6.2.1.5. Execution Evidence for Sprint Review.
 
+**Landing Page:**
+
+Para este Sprint 2, se completó la implementación del video about the
+product\
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image40.png){width="6.267716535433071in"
+height="3.375in"}
+
+**FrontendApplication:**
+
+Para este Sprint 2, se completó la implementación de los componentes que
+se explicaron en el user story, ademas ya esta deployado\
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image86.png){width="6.267716535433071in"
+height="3.5833333333333335in"}
+
+**MobileApplication:**
+
+Para este Sprint 2, se completó la implementación de los componentes que
+se explicaron en el user story.
+
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image104.png){width="4.65625in"
+height="9.364583333333334in"}
+
+## 6.2.1.6. Services Documentation Evidence for Sprint Review.
+
+## En este Sprint, mostraremos Endpoints que documentar ya que hemos Backend Application
+
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image51.png){width="6.267716535433071in"
+height="2.9166666666666665in"}
+
+## 6.2.1.7. Software Deployment Evidence for Sprint Review.
+
+En este Sprint, se realizaron diversas actividades relacionadas con el
+despliegue de la Landing Page y la Aplicación Web. Estas actividades
+incluyeron la creación de la página a la que pueden acceder los
+visitantes para conocer Masticat y, si lo desean, convertirse en
+usuarios. Por otro lado, se desarrolló la primera versión de la
+Aplicación Web, que actualmente obtiene datos de un fake API. A
+continuación, presentaremos la evidencia de despliegue.\
+\
+LANDING:[[https://league-of-coders-upc.github.io/Masticat-LandingPage/]{.underline}](https://league-of-coders-upc.github.io/Masticat-LandingPage/)
+
+WEB APP:
+[[https://masticat.vercel.app/login]{.underline}](https://masticat.vercel.app/login)
+
+Backend:[[https://swmmwwf2h0.execute-api.us-east-2.amazonaws.com]{.underline}](https://swmmwwf2h0.execute-api.us-east-2.amazonaws.com)
+
+## 6.2.1.8. Team Collaboration Insights during Sprint
+
+En esta parte vemos que todos los integrantes del grupo participaron
+activamente en la implementación de código para el FrontEnd Application.
+
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image118.png){width="6.267716535433071in"
+height="2.736111111111111in"}
 
 ## 6.3. Validation Interviews
 
 ## 6.3.1 Diseño de Entrevistas.
 
-*Preguntas sobre información personal:*
+**Preguntas sobre información personal:**
 
 -   ¿Indíqueme su nombre completo por favor?
 
@@ -728,7 +784,7 @@ Link:
 
 -   ¿A qué se dedica?
 
-*Preguntas principales:*
+**Preguntas principales:**
 
 -   ¿Qué opina usted del diseño de la landing page?
 
@@ -749,7 +805,7 @@ Link:
 En esta sección se hace un desglose de las entrevistas realizadas por
 cada segmento objetivo.\
 \
-*Segmento doméstico*
+**Segmento doméstico**
 
 Nombre: Andrea\
 Apellido: Huancas\
@@ -772,7 +828,7 @@ una sección de preguntas frecuentes para facilitar el acceso a
 información y opina que el proceso de edición de mascotas podría
 simplificarse, eliminando un paso innecesario.
 
-*Segmento veterinaria*
+**Segmento veterinaria**
 
 Nombre:Erick\
 Apellido:Alvarez\
@@ -792,3 +848,164 @@ investigando acerca del producto , por parte de la página web nos
 comenta que solo vio una sugerencia en nuestro sidebar mostrar mejores
 diseños ya que ahí estará la función más importante que es acerca de los
 dispositivos
+
+## 6.3.3 Evaluaciones según heurísticas
+
+UX Heuristics & Principles Evaluation Usability -- Inclusive Design --
+Information Architecture
+
+**Carrera:** Ingeniería de Software
+
+**Curso:** Desarrollo de Soluciones IoT
+
+**Sección:** SW74
+
+**Profesores:** Angel Augusto Velasquez Nuñez
+
+**Auditor:** Masticar
+
+**Clientes:** Josef Cesar Romero Florida, Christian Jose Zeta
+Valenzuela, Jhosaim Ricardo Pocohuanca Pineda, Djalma Santos Dioses
+Molina, Leonardo Jesus Ferreyra Canaval
+
+**SITE o APP a evaluar:** Masticar
+
+**Tareas a Evaluar:**
+
+Se incluye en el alcance de esta evaluación la revisión en cuanto a
+usabilidad de las siguientes tareas:
+
+1)  Inicio de sesión
+
+2)  Agregar mascota
+
+3)  Dispensación de comida
+
+4)  Dispensación de agua
+
+No están incluidas en esta versión de la evaluación las siguientes
+tareas:
+
+1)  Editar usuario
+
+2)  Editar mascota
+
+3)  Cámara en vivo
+
+**Escala de severidad:**
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de
+severidad.
+
+  -----------------------------------------------------------------------
+  Nivel      Descripción
+  ---------- ------------------------------------------------------------
+  1          Problema superficial: puede ser fácilmente superado por el
+             usuario o ocurre con muy poco frecuencia. No necesita ser
+             arreglado a no ser que exista disponibilidad de tiempo.
+
+  2          Problema menor: puede ocurrir un poco más frecuentemente o
+             es un poco más difícil de superar para el usuario. Se le
+             debería asignar una prioridad baja resolverlo de cara al
+             siguiente reléase.
+
+  3          Problema mayor: ocurre frecuentemente o los usuarios no son
+             capaces de resolverlos. Es importante que sean corregidos y
+             se les debe asignar una prioridad alta.
+
+  4          Problema muy grave: un error de gran impacto que impide al
+             usuario continuar con el uso de la herramienta. Es
+             imperativo que sea corregido antes del lanzamiento.
+  -----------------------------------------------------------------------
+
+**Tabla resumen:**
+
+  ----------------------------------------------------------------------------
+  \#   Problema                       Escala de         Heurística/Principio
+                                      severidad         violado
+  ---- ------------------------------ ----------------- ----------------------
+  1    Falta mensaje de confirmación  1                 Usability: Visibilidad
+       al agregar mascota                               del estado del sistema
+
+  2    Falta botón para eliminar      3                 Usability: Control y
+       device                                           libertad del usuario
+
+  3    Falta mensaje de confirmación  1                 Usability: Visibilidad
+       al actualizar el perfil                          del estado del sistema
+  ----------------------------------------------------------------------------
+
+**Descripción de problemas:**
+
+**Problema #1:** Falta mensaje de confirmación al agregar mascota\
+**Severidad**: 2
+
+**Heurística violada:** Usabilidad - Visibilidad del estado del sistema
+
+**Problema:**
+
+Durante el proceso de agregar una mascota, cuando los usuarios terminan
+de agregar los datos de su mascota, los dirige directamente al dashboard
+en lugar de mostrarles un mensaje de confirmación. Esto puede causar
+problemas en caso haya un problema de conexión que impida que la
+solicitud de agregar mascota llegue al back-end y se agregue de verdad.
+
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image132.jpg){width="6.270833333333333in"
+height="3.114324146981627in"}
+
+**Recomendación:**
+
+Añadir un mensaje de confirmación una vez añadida la mascota.
+
+**Problema #2:** Falta botón para eliminar device
+
+**Severidad:** 3
+
+**Heurística violada:** Usability: Control y libertad del usuario
+
+**Problema:**
+
+Actualmente no existe un botón para eliminar device por lo que una vez
+que un usuario añade un dispositivo a su cuenta no hay forma en que la
+elimine.
+
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image106.jpg){width="6.267716535433071in"
+height="2.8333333333333335in"}
+
+**Recomendación:**\
+Añadir un botón que permita al usuario eliminar los dispositivos.
+
+**Problema #3:** Falta mensaje de confirmación al actualizar el perfil
+
+**Severidad:** 1
+
+**Heurística violada:** Usability: Visibilidad del estado del sistema
+
+**Problema:**\
+Cuando el usuario actualiza los datos de su perfil no hay un mensaje de
+confirmación que indique que se agregó correctamente.
+
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image42.jpg){width="6.267716535433071in"
+height="3.111111111111111in"}
+
+**Recomendación:**\
+Añadir un mensaje que le permita saber al usuario que sus datos se
+actualizaron correctamente.
+
+## 6.4 Video About-the-product
+
+En esta sección se muestra nuestro video About the product que muestra
+las principales características de nuestra app.
+
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image117.png){width="6.267716535433071in"
+height="2.388888888888889in"}
+
+Link: [[upc-pre-202402-si572-SW74-League of Coders
+IOT-about-the-product-tb2.mp4]{.underline}](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201910655_upc_edu_pe/EW056-GZTXpDujrAyyCmFY0B5d0vMnVF8rMjWK14xBcLSQ?e=fJEH5k&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+## Video About-the-team
+
+![](vertopal_65e55790efbb4dada62679cbc5eb6f13/media/image56.png){width="6.267716535433071in"
+height="2.4027777777777777in"}
+
+Link: [[upc-pre-202402-si572-SW74-League of Coders
+IOT-about-the-team-tb2.mp4]{.underline}](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201910655_upc_edu_pe/EQQ-n4c4U0BFqK8Ra26_wFEBZljEHeeYGA6NcMEeciRmng?e=7di9a8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
